@@ -1,0 +1,7 @@
+Generador de animaciones -> https://animista.net/
+Generador de transiciones -> https://makingcss.com/transition
+Generador de Gradient -> https://cssgradient.io/
+Generador de GlassEffect -> https://hype4.academy/tools/glassmorphism-generator
+Generador de BoxShadow , TextShadow , cursores y bordes -> https://cssgenerator.org/box-shadow-css-generator.html
+
+Página muy generica con bastantes opciones -> https://css3generator.com/
