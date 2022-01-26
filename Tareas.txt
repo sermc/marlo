@@ -1,0 +1,29 @@
+Sergio
+-------------------------
+- Index.html
+- Filtros / buscadores
+
+Raquel
+-------------------------
+- Perfil
+- Ajustes
+
+Diego
+-------------------------
+- Mensajeria
+- Consejos
+
+Alvaro
+-------------------------
+- Perfil
+- ¿Quienes somos?
+
+Paula
+-------------------------
+- Página login (index.html)
+- Inicio.html
+- Consejos
+
+TODOS
+-------------------------
+- Mapa
