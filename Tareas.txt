@@ -27,8 +27,11 @@ Paula
 TODOS
 -------------------------
 - Mapa
+<<<<<<< HEAD
 
 
 ------------
 
 Probando Diego...
+=======
+>>>>>>> 398fbc902743574dcae53d0e886d652d508de5dc
