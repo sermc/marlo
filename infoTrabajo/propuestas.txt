@@ -1,2 +1,4 @@
 26/01/2022 - Sergio => La página de ¿Quienes somos? utilizar la plantilla enseñada en clase (Estaria practicamente terminada, 
                        solo se tendria que actualizar los datos y los colores de plantilla).
+
+26/01/2022 - Paula => Podemos utilizar como fondo una forma con el color morado este de cabify usando esta pág web to reshulona! getwaves.io 
