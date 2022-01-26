@@ -1,0 +1,2 @@
+26/01/2022 - Sergio => La página de ¿Quienes somos? utilizar la plantilla enseñada en clase (Estaria practicamente terminada, 
+                       solo se tendria que actualizar los datos y los colores de plantilla).
