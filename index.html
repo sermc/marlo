@@ -5,48 +5,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        body{
-            background-color: rgb(93, 46, 211);
-        }
-    </style>
-
-   
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  
     <title>Marlo</title>
   </head>
   <body>
     
-	<header >
-		<h1>Cabecera</h1>
+	<header class="container-fluid m-5 mb-4">
+		<h1>Marlo</h1><img src="img/gafas.png" id="gafas">
+    <p id="eslogan">Busca la patilla que te falta</p>
 	</header>
 	
-	<div class="container">
-        <div class="col-5 mt-4">
-            <form>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">@example.com</span>
-                  </div>
-                  
-                  <label for="basic-url" class="form-label">Your vanity URL</label>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                  </div>
-            </form>
-        </div>
+	<div class="container-fluid">
+    <div class="row ms-5">
+      <div id="form" class="col-4 mt-2">
+        <form class="form m-4">
+
+          <p class="mb-4">Todos nos merecemos encontrar a esa persona
+            perfecta para nosotros, hasta los feos. Su pareja perfecta
+            está a solo un clic de distancia...¿te atreves?
+          </p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg>
+            </span>
+            <input type="text" class="form-control" placeholder="Usuario o correo electrónico" autofocus aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+              
+          <div class="input-group mb-3">
+            <input type="password" id="pass" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-key" viewBox="0 0 16 16">
+                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+              </svg>
+            </span>
+          </div>
+              
+          <button type="button" class="btn btn-outline-light w-100">Iniciar sesión</button>
+          <br><br>
+          <div style="text-align: center; height: 50px;">
+            <a href="" >¿Has olvidado la contraseña?</a>
+          </div>
+          
+          <div id="ultimos" class="container" style="text-align: center;">
+            <p class="pt-3 black">Últimos miembros registrados</p>
+            <div class="row">
+              <div class="col">
+                <img src="img/Manu1.jpeg" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col">
+                <img src="img/Rafa.jpeg" class="rounded-circle">
+                <p class="black mt-1">rafaQueCutis</p>
+              </div>
+
+              <div class="col">
+                <img src="img/AntonioB.jpeg" class="rounded-circle">
+                <p class="black mt-1" >sekki</p>
+              </div>
+            </div>
+            <p class="pt-1 pb-3 black temblar">¿Te los vas a perder?</p>
+          </div>
+          
+        </form>
+
+      </div>
+      
+    </div>
+    
+        
+        
         
 	</div> 
 
-	<footer >
-		<h4>Este es el pie de página</h4>
+	<footer class="container-fluid mt-4 text-center">
+		<h3><i>Más allá de la percepción subjetiva de la belleza, una app para buenas personas y simpáticos</i></h3>
+    <p>No nos responsabilizamos de los robos, cortes, pérdida de vista, desmayos, problemas estomacales concurridos durante su cita </p>
 	</footer>
     
   </body>

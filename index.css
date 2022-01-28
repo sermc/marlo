@@ -1,0 +1,139 @@
+body{
+    background-color: rgb(148, 124, 251);
+    text-align: justify;
+}
+
+h1 {
+    font-family: marlo;
+    color:white;
+    font-size: 90px;
+    display: inline;
+    margin-left: 8px;
+}
+
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+p {
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 16.1px;
+}
+
+.black {
+    color:rgb(32, 32, 32);
+}
+a, a:link, a:visited{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-out;
+}
+
+a:hover{
+    color: rgb(199, 189, 255);
+    font-size: larger;
+}
+
+.form-control {
+    height: 42px;
+    border: 1px solid #e6e6e6;
+    background: rgba(255, 255, 255, 0.972);
+    width: 100%;
+    padding: 0 18px
+}
+
+.input-group-text {
+    background: rgb(157, 128, 251);
+    border-color:rgb(157, 128, 251);
+}
+
+#pass {
+    color:rgb(135, 98, 255);
+    -webkit-text-security: circle;
+}
+
+#eslogan {
+    color: white;
+    font-family: eslogan;
+    font-size: 23px;
+    position: relative;
+    top:-12px;
+    letter-spacing: -1px;
+}
+
+#ultimos {
+    background-color: rgb(246, 243, 255);
+    border-radius: 8px;
+}
+
+#gafas {
+    width: 78px; 
+    height: 38px;
+    filter: invert();
+    position: relative;
+    top:-23px;
+    left: 4px;
+    transform: rotate(22deg);
+}
+
+#form {
+    background-color: rgba(77, 48, 173, 0.685);
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    transition: all 0.3s ease-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {   
+  border-color: rgba(147, 106, 241, 0.89);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+.btn {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 0.6s ease-out;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(147, 106, 241, 0.89));
+    border:none;
+    height: 38px;
+    font-weight: bold;
+    color: rgba(77, 48, 173, 0.966);
+}
+
+
+/* ----- FUENTES ----- */
+@font-face {
+    font-family: marlo;
+    src: url("fonts/mark_my_words.ttf");
+}
+
+@font-face {
+    font-family: eslogan;
+    src: url("fonts/Latterday.ttf");
+}
+
+/* ANIMACIONES */
+.temblar:hover {
+    animation: temblar 1.2s infinite;
+    font-weight: bold;
+}
+
+@keyframes temblar {
+    0%  { transform:rotateZ(-5deg); }
+    30% { transform:rotateZ( 0deg) scale(.8); }
+    50%{ transform:rotateZ( 5deg); }
+    80% { transform:rotateZ( 0deg) scale(.8); }
+    100%  { transform:rotateZ(-5deg); }
+}
