@@ -23,6 +23,14 @@ img {
     transition:all 0.3s ease;
 }
 
+#content-gif {
+    background-image: url('img/alvaro_raquel.gif');
+    background-repeat: no-repeat;
+    background-size: auto 1500px;
+    background-position-x: 30%;
+    opacity: 0.8;
+}
+
 .fadeImg {
     opacity:0.8;
 }
@@ -96,8 +104,10 @@ a:hover{
 }
 
 #form {
-    background-color: rgba(77, 48, 173, 0.685);
+    background-color: rgba(77, 48, 173, 0.739);
     border-radius: 8px;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
