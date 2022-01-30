@@ -7,9 +7,51 @@
     background-repeat: no-repeat;
 } */
 
+@font-face {
+    font-family: marlo;
+    src: url("../fonts/mark_my_words.ttf");
+}
+
 .azulito{
-    color: rgb(148,124,251);
+    color: white;
     font-size: 1.25em;
+}
+
+.azulito:hover{
+    color:black;
+}
+
+header{
+    background-color: rgb(148,124,251); 
+    
+}
+
+header h4{
+    font-family: marlo;
+    color: white;
+    position: relative;
+    top: 5px;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    top:8.5%;
+    left: -1%;
+    height: 20px;
+    width: 101%;
+    background-image: url(../img/Backgrounds/back_header.svg);
+}
+
+#gafas {
+    width: 52px; 
+    height: 42px;
+    filter: invert();
+    position: relative;
+    top:-5px;
+    left: 4px;
+    transform: rotate(22deg);
+    margin-right: 2em;
 }
   
   .text-small {
