@@ -1,7 +1,7 @@
 body{
     background-color: rgb(148, 124, 251);
     text-align: justify;
-    background-image: url('img/marlo_fondo.png');
+    background-image: url('../img/marlo_fondo.png');
 }
 
 h1 {
@@ -24,7 +24,7 @@ img {
 }
 
 #content-gif {
-    background-image: url('img/alvaro_raquel.gif');
+    background-image: url('../img/alvaro_raquel.gif');
     background-repeat: no-repeat;
     background-size: auto 1500px;
     background-position-x: 30%;
@@ -136,12 +136,12 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 /* ----- FUENTES ----- */
 @font-face {
     font-family: marlo;
-    src: url("fonts/mark_my_words.ttf");
+    src: url("../fonts/mark_my_words.ttf");
 }
 
 @font-face {
     font-family: eslogan;
-    src: url("fonts/Latterday.ttf");
+    src: url("../fonts/Latterday.ttf");
 }
 
 /* ANIMACIONES */
