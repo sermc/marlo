@@ -1,0 +1,21 @@
+/* Background image */
+
+/* MIRAR POSICIONAMIENTO DE LA IMAGEN */
+/* body {
+    background-image: url(../img/Backgrounds/back_inicio.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+} */
+
+.azulito{
+    color: rgb(148,124,251);
+    font-size: 1.25em;
+}
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
