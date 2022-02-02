@@ -1,3 +1,51 @@
-body{background-color: purple}
-head{width: 100%;}
-h1{color: white; margin-left: 42%}
+body
+{
+    background-image: url("../img/Backgrounds/mensajes/5495619.jpg");
+    /*background-image: linear-gradient(rgba(255,255,255,1), rgba(148,124,251,1)); */
+}
+
+h1{
+    /*color: rgb(148,124,251)*/
+    color:white
+}
+
+@font-face {
+    font-family: 'alba';
+    src: url('../fonts/alba/ALBA____.TTF') format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+.titulo{ margin-left: 41.5%; margin-top: 1em; font-family: alba; -webkit-text-stroke: 2px rgb(148,124,251); transform: scale(1.4)}
+
+.a1{color:white; margin: 10%; transform: scale(1.4); transition: all 0.5s; -webkit-text-stroke: 0.2px rgb(148,124,251)}
+.a1:hover{color: rgba(255, 255, 255, 0.787); transform: scale(1.8); transition: all 0.5s;}
+.nav1{
+    background-color: rgba(rgb(255, 255, 255), rgb(87, 235, 255),rgb(252, 255, 215), 50)
+}
+.uno-container{
+    margin-left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.p-container {
+    margin-top: 1em; 
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.col1, .col2{
+    margin-top: 5%;
+    border: 1px solid rgb(148,124,251);
+    border-radius: 10px;
+}
+
+.col1{
+
+}
+
+.col2{
+     
+}
