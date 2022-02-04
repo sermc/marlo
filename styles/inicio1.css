@@ -33,14 +33,8 @@ header h4{
     top: 5px;
 }
 
-header::after{
-    content: "";
-    position: absolute;
-    top:8.5%;
-    left: -1%;
-    height: 20px;
-    width: 101%;
-    background-image: url(../img/Backgrounds/back_header.svg);
+.a{
+    border: 3px solid red;
 }
 
 #gafas {
