@@ -2,12 +2,13 @@ body{
     background-color: rgb(148, 124, 251);
     text-align: justify;
     background-image: url('../img/marlo_fondo.png');
+    width: 90%;
 }
 
 h1 {
     font-family: marlo;
     color:white;
-    font-size: 90px;
+    font-size: 80px;
     display: inline;
     margin-left: 8px;
 }
@@ -26,10 +27,18 @@ img {
 #content-gif {
     background-image: url('../img/alvaro_raquel.gif');
     background-repeat: no-repeat;
-    background-size: auto 1500px;
+    background-size: auto 1400px;
     background-position-x: 30%;
     opacity: 0.78;
 }
+
+#registroB {
+    background-color: red;
+    text-align: center;
+    height: 10%;
+}
+
+
 
 .fadeImg {
     opacity:0.8;
@@ -82,7 +91,7 @@ a:hover{
 #eslogan {
     color: white;
     font-family: eslogan;
-    font-size: 23px;
+    font-size: 17px;
     position: relative;
     top:-12px;
     letter-spacing: -1px;
@@ -132,6 +141,21 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     color: rgba(77, 48, 173, 0.966);
 }
 
+.flip {
+	        animation: flip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+  @keyframes flip {
+    0% {
+              transform: translateX(0) translateZ(0) rotateY(0);
+              transform-origin: 100% 50%;
+    }
+    100% {
+              transform: translateX(100%) translateZ(-260px) rotateY(180deg);
+              transform-origin: 0% 0%;
+    }
+  }
+  
 
 /* ----- FUENTES ----- */
 @font-face {
