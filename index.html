@@ -16,20 +16,41 @@
 
     <title>Marlo</title>
     <script>
-      var form1 = document.getElementById("form1");
-      var form2 = document.getElementById("form2");
+      window.onload = function (){
+        document.getElementById("registro").onclick = cambioForm;
+      }
+
+      function cambioForm (){
+        let form1 = document.getElementById("form1");
+        let form2 = document.getElementById("form2");
+        console.log(form1.style.display == "none");
+        if(form1.style.display == "none"){
+          document.getElementById("registro").innerHTML = "( Regístrate )";
+          form2.style.display = "none";
+          form1.style.display = "block";
+          form1.classList.add("holi");
+          
+        }
+        else {
+          form1.style.display = "none";
+          form2.style.display = "block";
+          form2.classList.add("holi");
+          document.getElementById("registro").innerHTML = "( Inicia Sesión )";
+        }
+      }
+      
     </script>
   </head>
   <body>
     
-	<header class="container-fluid m-4">
+	<header class="container-fluid mt-4 mb-4 ps-5 pe-5">
     <div class="row">
       <div class="col">
         <h1>Marlo</h1><img src="img/gafas.png" id="gafas">
         <p id="eslogan">Busca la patilla que te falta</p>
       </div>
       <div  class="col" style="display: flex; align-items:center; justify-content: end;">
-        <button class="btnRegistro btn-outline-light">¡Regístrate!</button>
+        <button id="registro" type="button" class="btn btn1 btn-link">( Regístrate )</button>
       </div>
     </div>
 	</header>
@@ -64,10 +85,10 @@
             </span>
           </div>
               
-          <button type="button" class="btn btn-outline-light w-100">Iniciar sesión</button>
+          <a href="inicio.html"><button type="button" class="btn btn2 btn-outline-light w-100">Iniciar sesión</button></a>
           <br><br>
           <div style="text-align: center; height: 50px;">
-            <a href="" >¿Has olvidado la contraseña?</a>
+            <a href="" title="¿A qué voy yo y la encuentro?">¿Has olvidado la contraseña?</a>
           </div>
           
           <!-- CARRUSEL -->
@@ -142,26 +163,39 @@
               </a>
             </div>
 
-
-           
-            
             <p class="pt-1 pb-3 black temblar">¿Te los vas a perder?</p>
           </div>
           
         </form>
 
-
-
-
-
-
-
-
+    <!-- //////////////////////////////////////////////////////////////////// -->
 
         <form id="form2" class="form m-4" style="display:none">
-
-          <p class="mb-4">AAAAAAAAAAAAAAAAAAAAAAAAAA
+          <p class="mb-4">¿Eres consciente de lo que estás apunto
+            de hacer? VAS A CAMBIAR TODO TU MUNDO, VAS A CONSEGUIR
+            HABLAR CON OTROS SERES HUMANOS (recalcamos lo de seres humanos), 
+            <span style="font-size:small; color:rgba(255, 255, 255, 0.753)">vas a darnos todos tus datos para que los vendamos por ebay
+             y así sacar provecho de tus pocas dotes sociales</span><br><span style="font-size:xx-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 3px;">POR FIN.  VAS.  A.  LIGAR.</span>
           </p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-envelope-paper-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.133l.941.502A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765L2 3.133V2Zm0 2.267-.47.25A1 1 0 0 0 1 5.4v.817l1 .6v-2.55Zm1 3.15 3.75 2.25L8 8.917l1.25.75L13 7.417V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v5.417Zm11-.6 1-.6V5.4a1 1 0 0 0-.53-.882L14 4.267v2.55ZM8 2.982C9.664 1.309 13.825 4.236 8 8 2.175 4.236 6.336 1.31 8 2.982Zm7 4.401-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734Z"/>
+              </svg>
+            </span>
+            <input type="text" title="Es solo una sugerencia ¯\_( ͡❛ ͜ʖ ͡❛)_/¯" class="form-control" placeholder="no_ligo_ni_pagando@gmail.com" autofocus aria-label="email" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" id="nom" class="form-control" title="No, no puedes poner Batman" placeholder="Nombre Completo" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" class="bi bi-chat-left-heart" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+                <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+            </span>
+          </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">
@@ -170,11 +204,11 @@
                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
               </svg>
             </span>
-            <input type="text" class="form-control" placeholder="Usuario o correo electrónico" autofocus aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" title="Nah es broma" class="form-control" placeholder="Nombre Usuario (sé serio por favor)" aria-label="Username" aria-describedby="basic-addon1">
           </div>
               
           <div class="input-group mb-3">
-            <input type="password" id="pass" class="form-control" placeholder="Contraseña" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="password" id="pass" class="form-control" placeholder="Contraseña" title="Por dios que no se te olvide, que lo del token y to' eso es un lío" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <span class="input-group-text" id="basic-addon2">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-key" viewBox="0 0 16 16">
                 <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
@@ -182,99 +216,84 @@
               </svg>
             </span>
           </div>
-              
-          <button type="button" class="btn btn-outline-light w-100">Iniciar sesión</button>
-          <br><br>
-          <div style="text-align: center; height: 50px;">
-            <a href="" >¿Has olvidado la contraseña?</a>
-          </div>
-          
-          <!-- CARRUSEL -->
-          <div id="ultimos" class="container" style="text-align: center;">
-            <p class="pt-3 black">Últimos miembros registrados</p>
 
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="10000">
-                  <div class="row">
-                    <div class="col">
-                      <img src="img/Manu1.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">manué</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/Angel.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">angel_heredia7</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/AntonioB.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1" >sekki</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="carousel-item" data-interval="10000">
-                  <div class="row">
-                    <div class="col">
-                      <img src="img/Paulaner1.jpg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">paulaner</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/Raquel.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">normal</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/SergioDiego.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1" >serego</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item" data-interval="10000">
-                  <div class="row">
-                    <div class="col">
-                      <img src="img/Adan.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">morenito</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/AntonioG.jpeg" class="rounded-circle fadeImg">
-                      <p class="black mt-1">antonio.gt_02</p>
-                    </div>
-      
-                    <div class="col">
-                      <img src="img/Alvaro.jpg" class="rounded-circle fadeImg">
-                      <p class="black mt-1" >es_queEsRubio</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
-              </a>
-            </div>
-
-
+          <div style="display: flex; align-items:center; justify-content: space-between; flex-wrap: wrap">
+          <select title="¡La compatibilidad es importantísima en estos tiempos!" class="form-select form-select mb-3" aria-label=".form-select-lg example" style="width: auto; display:inline-block">
+            <option selected >&#9885; Horóscopo</option>
+            <option value="1" title="Baja los estándars porque si no aquí no hacemos nada">&#x2648; Aries</option>
+            <option value="2" title="Muchos cuernos, te entiendo">&#x2649; Tauro</option>
+            <option value="3" title="Uy dos caras...">&#x264a; Géminis</option>
+            <option value="4" title="Al menos eres...simpático">&#x264b; Cancer</option>
+            <option value="5" title="Ufff...es que con ese carácter qué esperas cariño">&#x264c; Leo</option>
+            <option value="6" title="La vida es un drama">&#x264d; Virgo</option>
+            <option value="7" title="No te engañes, lo que importa no es solo el interior">&#x264e; Libra</option>
+            <option value="8" title="Esto va a ser complicado...">&#x264f; Escorpio</option>
+            <option value="9" title="No busques más amarres de amor en google y regístrate aquí ya">&#x2650; Sagitario</option>
+            <option value="10" title="Niñ@ con esos celos no vamos a llegar a nada eh">&#x2651; Capricornio</option>
+            <option value="11" title="De verdad, es que te ahogas en un vaso de agua eh">&#x2652; Acuario</option>
+            <option value="12" title="Es que no hay tantos peces en el mar bonit@">&#x2653; Piscis</option>
+          </select>
            
-            
-            <p class="pt-1 pb-3 black temblar">¿Te los vas a perder?</p>
+          <div style="display: flex; align-items:center;">
+            <p style="display: inline-block;" class="me-3">Color de tu alma</p>
+            <input type="color" class="form-control form-control-color mb-3" id="exampleColorInput" value="#947cfb" title="Tu color favorito vaya" style="padding: .375rem; width:50px; height: auto; display:inline-block">
           </div>
+
+          <select title="Uf...esto va a ser complicado" class="form-select form-select mb-3" aria-label=".form-select-lg example" style="width: auto; display:inline-block">
+            <option selected >⚥ Género</option>
+            <option value="1" title="...¿y ya está?">♀ Mujer</option>
+            <option value="2" title="...que soso">♂ Hombre</option>
+            <option value="3" title="Debe ser un lío eso de ir al baño...">⚥ Hermafrodita</option>
+            <option value="4" title="¡Anda! Como el ph del jabón">ツ Neutro</option>
+            <option value="5" title="10111111 01000101 01101110 01110100 01101111 01101110 01100011 01100101 01110011 00100000 01100101 01110010 01100101 01110011 00100000 01100100 01100101 01100011 01101001 01101101 01100001 01101100 00111111">✘ No binario</option>
+            <option value="6" title="Hoy no sé que toca">~ Fluido</option>
+            <option value="7" title="Empezamos mal desde el principio (╥﹏╥)">&#x26a7; Transgénero</option>
+            <option value="8" title="De todo un poco">♁ Andrógino</option>
+            <option value="8" title="Pero bien plantao' que te van a dejar">⚘ Planta</option>
+            <option value="9" title="Todos nos sentimos un poco así a veces, ¡ÁNIMO! 💪( ͡❛ ͜ʖ ͡❛)">:( Incomprendido</option>
+            <option value="10" title="Sinceridad ante todo">&#x263a; Tonto</option>
+            <option value="11" title="Po' cómo no lo sepa tú">? No sé</option>
+          </select>
+        </div> 
+
+        <p class="me-3" style="display: inline-block;">Estoy buscando...</p>
+        <div class="form-check form-check-inline mb-1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1" title="Estable, de hecho, de broma, rollo, amantes, amigos con derechos, sin derechos, rollo..."><p>Pareja</p></label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2" title="O lo que me dén vaya, no nos vamos a poner exquisitos tampoco vaya"><p>Lo que surja</p></label>
+        </div>
+        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+          <label class="form-check-label" for="inlineRadio3" title="Próximamente en la próxima actualización"><p>Bolas de dragón</p></label>
+        </div>
+        
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"><p>¿Desea recibir notificaciones? Serán muy pocas de verdad :)</p></label>
+        </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="width: 22px; height: 22px;">
+            <label class="form-check-label" for="flexCheckDefault">
+              <p class="ms-2">No me he leído los Términos y Condiciones de uso pero los acepto igual</p>
+            </label>
+          </div>
+          <a href="inicio.html"><button type="button" class="btn btn2 btn-outline-light w-100">Comienza a ligar como nunca</button></a>
           
         </form>
 
       </div>
       <div class="col" id="content-gif"></div>
     </div>
-   
+    
   
 	</div> 
+  
 
 	<footer class="container-fluid mt-5 text-center">
 		<h3><i>Más allá de la percepción subjetiva de la belleza, una app para buenas personas y simpáticos</i></h3>
