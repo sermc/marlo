@@ -1,11 +1,9 @@
 /* Background image */
 
 /* MIRAR POSICIONAMIENTO DE LA IMAGEN */
-/* body {
-    background-image: url(../img/Backgrounds/back_inicio.svg);
-    background-size:cover;
-    background-repeat: no-repeat;
-} */
+body {
+    background-image: url("../img/whats.jpg");
+}
 
 @font-face {
     font-family: marlo;
@@ -21,6 +19,20 @@
     color:black;
 }
 
+.centrar{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-round{
+    border-radius: 4px;
+}
+
+.posi{
+    border: 3px solid red;
+}
+
 header{
     background-color: rgb(148,124,251); 
     
@@ -33,9 +45,7 @@ header h4{
     top: 5px;
 }
 
-.a{
-    border: 3px solid red;
-}
+
 
 #gafas {
     width: 52px; 
@@ -55,3 +65,29 @@ header h4{
   .dropdown-toggle {
     outline: 0;
   }
+
+
+  /* ANIMACIONES */
+
+.fade-in {
+	        animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

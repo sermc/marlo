@@ -294,6 +294,10 @@ flex-flow: row nowrap;
 justify-content: flex-start;
 }
 
+a{
+    text-decoration: none;
+}
+
 .navbar-expand-xl .navbar-nav {
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
