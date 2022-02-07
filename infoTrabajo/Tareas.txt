@@ -1,6 +1,6 @@
 Sergio
 -------------------------
-- Index.html
+- Inicio.html
 - Filtros / buscadores
 
 Raquel

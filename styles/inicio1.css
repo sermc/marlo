@@ -1,0 +1,93 @@
+/* Background image */
+
+/* MIRAR POSICIONAMIENTO DE LA IMAGEN */
+body {
+    background-image: url("../img/whats.jpg");
+}
+
+@font-face {
+    font-family: marlo;
+    src: url("../fonts/mark_my_words.ttf");
+}
+
+.azulito{
+    color: white;
+    font-size: 1.25em;
+}
+
+.azulito:hover{
+    color:black;
+}
+
+.centrar{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-round{
+    border-radius: 4px;
+}
+
+.posi{
+    border: 3px solid red;
+}
+
+header{
+    background-color: rgb(148,124,251); 
+    
+}
+
+header h4{
+    font-family: marlo;
+    color: white;
+    position: relative;
+    top: 5px;
+}
+
+
+
+#gafas {
+    width: 52px; 
+    height: 42px;
+    filter: invert();
+    position: relative;
+    top:-5px;
+    left: 4px;
+    transform: rotate(22deg);
+    margin-right: 2em;
+}
+  
+  .text-small {
+    font-size: 85%;
+  }
+  
+  .dropdown-toggle {
+    outline: 0;
+  }
+
+
+  /* ANIMACIONES */
+
+.fade-in {
+	        animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
