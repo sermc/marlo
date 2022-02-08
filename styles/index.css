@@ -221,3 +221,17 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     100%  { transform:rotateZ(-5deg); }
 }
 
+
+.form-range {
+    width: 74%;
+    padding-left: 0.5% ;
+}
+.range input::-webkit-slider-thumb{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #664AFF;
+  border: 1px solid #664AFF;
+  cursor: pointer;
+}
+
