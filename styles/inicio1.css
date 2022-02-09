@@ -2,8 +2,16 @@
 
 /* MIRAR POSICIONAMIENTO DE LA IMAGEN */
 body {
+<<<<<<< HEAD
     background-image: url("../img/whats.jpg");
     background-repeat: round;
+=======
+  background-color: rgb(148, 124, 251);
+  text-align: justify;
+  background-image: url('../img/fondo.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+>>>>>>> 64b9c1719f5d1e502f14dd7c5b530be9aeecd027
 }
 
 @font-face {
