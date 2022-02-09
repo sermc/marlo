@@ -3,6 +3,7 @@
 /* MIRAR POSICIONAMIENTO DE LA IMAGEN */
 body {
     background-image: url("../img/whats.jpg");
+    background-repeat: round;
 }
 
 @font-face {
@@ -23,6 +24,7 @@ body {
     display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: .5em;
 }
 
 .border-round{
@@ -30,7 +32,14 @@ body {
 }
 
 .posi{
-    border: 3px solid red;
+    /* border: 3px solid red; */
+    background-color: rgb(214, 206, 206);
+    border-radius: 5px;
+}
+
+.centrarTitulo{
+  display: block;
+  margin-left: 1.8em;
 }
 
 header{
@@ -91,3 +100,19 @@ header h4{
     }
   }
   
+  /* RESPONSIVE */
+  /* ------------------------------------ */
+
+  @media (max-width: 1150px){
+    .centrar{
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 795){
+    .centrar{
+      width: 10px;
+      height: 10px;
+    }
+  }
