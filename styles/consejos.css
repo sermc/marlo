@@ -5,3 +5,17 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+#covid {
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 8px;
+}
+
+img {
+    width: 1px;
+}
+
+ul { 
+    list-style-image: url("../img/amor.png"); 
+    font-size: large;
+}
