@@ -137,56 +137,51 @@ img{
 
         /* BOCADILLOS */
 
-        .bocadillo-redondo-usu1 {
-            position: relative;
-            background-color: white;
+        .bocadillo-cuadrado-usu1 {
             color: rgb(148,124,251);
-            width: 40%;
-            margin-left: 5%;
+            position: relative;
             height: 50px;
+            width: 300px;
+            background: white;
+            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
-            margin-top: 10px;
-            text-align: right;
-            padding-top: 0.8em;
-            padding-right: 1em;
-            clear: both;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 0.4em;
         }
-        .bocadillo-redondo-usu1:before {
+        .bocadillo-cuadrado-usu1:before {
             border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
             border-right-color: transparent;
             position: absolute;
-            bottom: -16px;
-            right: 338px;
-            transform: rotate(-65deg);
-        } 
-
-        .bocadillo-redondo-usu2 {
-            position: relative;
-            background-color: white;
-            color: rgb(148,124,251);
-            width: 40%;
-            margin-left: 5%;
-            height: 50px;
-            border-radius: 5px;
-            margin-top: 10px;
-            text-align: right;
-            padding-top: 0.8em;
-            padding-right: 1em;
-            clear: both;
+            bottom: -20px;
+            right: 260px;
+            transform: rotate(-67deg);
         }
 
-        .bocadillo-redondo-usu2:before {
+        .bocadillo-cuadrado-usu2 {
+            color: rgb(148,124,251);
+            position: relative;
+            height: 50px;
+            width: 300px;
+            background: white;
+            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 0.4em;
+            margin-right: 20px;
+        }
+        .bocadillo-cuadrado-usu2:before {
             border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
             border-right-color: transparent;
             position: absolute;
-            bottom: -42px;
-            right: 40px;
+            bottom: -20px;
+            left: 260px;
             transform: rotate(+65deg);
-        } 
+        }
 
