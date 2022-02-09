@@ -103,7 +103,8 @@ img{
 
 /* COLUMNA 2 CHAT ACTIVO */
 .col2{
-    background-image: url("../img/Backgrounds/mensajes/5251.jpg");
+    background-image: url("../img/fondo_msn.jpg");
+    border: 2px solid white;
     color: white;
     overflow: hidden;
 }
@@ -138,41 +139,47 @@ img{
 
         .bocadillo-redondo-usu1 {
             position: relative;
-            height: 100px;
-            width: 250px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
-            padding: 2em;
-            color:rgb(148,124,251);
-            margin: 1.5em;
+            background-color: white;
+            color: rgb(148,124,251);
+            width: 40%;
+            margin-left: 5%;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: right;
+            padding-top: 0.8em;
+            padding-right: 1em;
+            clear: both;
         }
         .bocadillo-redondo-usu1:before {
-            border: 25px solid white;
+            border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
             border-right-color: transparent;
             position: absolute;
-            bottom: -38px;
-            right: 170px;
-            transform: rotate(+16deg);
+            bottom: -16px;
+            right: 338px;
+            transform: rotate(-65deg);
         } 
 
         .bocadillo-redondo-usu2 {
             position: relative;
-            height: 100px;
-            width: 250px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
-            padding: 2em;
-            color:rgb(148,124,251);
-            margin: 1.5em;
+            background-color: white;
+            color: rgb(148,124,251);
+            width: 40%;
+            margin-left: 5%;
+            height: 50px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: right;
+            padding-top: 0.8em;
+            padding-right: 1em;
+            clear: both;
         }
 
         .bocadillo-redondo-usu2:before {
-            border: 27px solid white;
+            border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
@@ -180,6 +187,6 @@ img{
             position: absolute;
             bottom: -42px;
             right: 40px;
-            transform: rotate(-16deg);
+            transform: rotate(+65deg);
         } 
 
