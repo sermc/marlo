@@ -1,7 +1,8 @@
 body
 {
-    background-image: url("../img/Backgrounds/mensajes/5495619.jpg");
-    /*background-image: linear-gradient(rgba(255,255,255,1), rgba(148,124,251,1)); */
+    /*background-image: url("../img/Backgrounds/mensajes/5495619.jpg");
+      background-image: linear-gradient(rgba(255,255,255,1), rgb(148,124,251)); */
+      background-image: url('../img/whats.jpg');
 }
 
 h1{
@@ -24,28 +25,24 @@ h1{
     background-color: rgba(rgb(255, 255, 255), rgb(87, 235, 255),rgb(252, 255, 215), 50)
 }
 .uno-container{
-    margin-left: 10%;
-    width: 80%;
-    height: 80%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 .p-container {
     margin-top: 1em; 
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     height: 100%;
 }
 
 .col1, .col2{
-    margin-top: 5%;
     border: 1px solid rgb(148,124,251);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-.col1{
-
-}
-
-.col2{
-     
+#l{
+    clear: both;
+    /* HIJOPUTA ESTE CHAT*/
 }
