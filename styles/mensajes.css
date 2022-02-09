@@ -104,6 +104,7 @@ img{
 /* COLUMNA 2 CHAT ACTIVO */
 .col2{
     background-image: url("../img/fondo_msn.jpg");
+    background-size: 600px;
     border: 2px solid white;
     color: white;
     overflow: hidden;
