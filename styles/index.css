@@ -223,8 +223,8 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 
 .form-range {
-    width: 74%;
-    padding-left: 0.5% ;
+    /* width: 74%; */
+    /* padding-left: 0.5% ; */
 }
 .range input::-webkit-slider-thumb{
   width: 20px;
