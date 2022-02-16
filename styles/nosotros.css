@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-@media (min-width: 1000px) {
-    .col-md-7 {
-        font-size: .5em;
-    }
-=======
 #header {
     background-color: black;
     width: 100%;
@@ -14,7 +8,93 @@ body {
     background-color: rgb(148, 124, 251);
     text-align: justify;
     background-image: url('../img/fondo.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
->>>>>>> dc864d2f1a916c227d06805ccd7b22d41563c708
+}
+
+/* -------- ANIMACIONES -------- */
+/* ROTACIÓN */
+@keyframes rotacion{
+    0%{
+        transform:rotate(0)
+    }100%{
+        transform:rotate(360deg)
+    }
+}
+
+/* ROTACIÓN CON ZOOM */
+@keyframes rotacion-zoom{
+    0%{
+        transform:scale(1) rotateZ(0)
+    }50%{
+        transform:scale(2) rotateZ(180deg)
+    }100%{
+        transform:scale(1) rotateZ(360deg)
+    }
+}
+
+/* ROTACIÓN DOBLE */
+@-webkit-keyframes rotacion-doble {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+  @keyframes rotacion-doble {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+    }
+  }
+
+/* ROTACIÓN HORIZONTAL CON ZOOM */
+@-webkit-keyframes rotacion-horizontal-zoom {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateY(180deg);
+              transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+@keyframes rotacion-horizontal-zoom {
+    0% {
+        -webkit-transform: scale(1) rotateY(0);
+                transform: scale(1) rotateY(0);
+    }
+    50% {
+        -webkit-transform: scale(2) rotateY(180deg);
+                transform: scale(2) rotateY(180deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotateY(360deg);
+                transform: scale(1) rotateY(360deg);
+    }
+}
+
+#preRaquel:hover {
+    animation:rotacion .6s ease-in-out both;
+}
+#preSergio:hover{
+    animation:rotacion-zoom .65s linear both;
+}
+#prePaula:hover {
+    -webkit-animation: rotacion-doble 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: rotacion-doble 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+#preAlvaro:hover{
+    -webkit-animation: rotacion-horizontal-zoom 0.65s linear both;
+	animation: rotacion-horizontal-zoom 0.65s linear both;
 }
