@@ -1,3 +1,8 @@
+h1{
+    /*color: rgb(148,124,251)*/
+    color:white
+}
+
 /* FUENTE */
 
 @font-face {
@@ -10,7 +15,10 @@
 /* PRINCIPAL */
 body
 {
-    background-image: url("../img/whats.jpg"); 
+    background-color: rgb(148, 124, 251);
+    text-align: justify;
+    background-image: url('../img/fondo.jpg');
+    background-size: 100%;
     
 }
 
@@ -40,24 +48,22 @@ h1{
     background-color: rgba(rgb(255, 255, 255), rgb(87, 235, 255),rgb(252, 255, 215), 50)
 }
 .uno-container{
-    margin-left: 10%;
-    width: 80%;
-    height: 80%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 /* CONTENEDORES */
 
 .p-container {
     margin-top: 1em; 
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 5%;
+    width: 90%;
     height: 100%;
 }
 
 .col1, .col2{
-    margin-top: 5%;
-    border: 1px solid rgb(148,124,251);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 /* COLUMNA 1 MENU DE CHATS */
@@ -68,27 +74,31 @@ h1{
     background-size: 500%;
     color: rgb(148,124,251);
     overflow: hidden;
+    text-align: center
 }
 
 #chats{
     font-family: alba; 
     color: white;
-    -webkit-text-stroke: 2px rgb(148,124,251); 
-    transform: scale(2);
-    margin-left: 57%;
+    -webkit-text-stroke: 1px rgb(148,124,251); 
 }
 
+.chatM{
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
 img{
     width: 140px;
     height: 140px;
-    margin-left: 22%;
+    margin-left: 12%;
     margin-top: 10px;
     margin-right: 10px;
 }
 
 /* COLUMNA 2 CHAT ACTIVO */
 .col2{
-    background-image: url("../img/Backgrounds/mensajes/5251.jpg");
+    background-image: url("../img/fondo_msn.jpg");
+    background-size: 600px;
+    /*border: 2px solid white; */
     color: white;
     overflow: hidden;
 }
@@ -105,70 +115,63 @@ img{
 }
 
 #nMensaje {
+    position: relative;
     background-color: white;
     color: rgb(148,124,251);
     width: 90%;
-    margin-left: 5%;
+    top: 90%;
     height: 50px;
+    margin-left: 5%;
     border-radius: 5px;
-    margin-top: 90%;
-    text-align: right;
-    padding-top: 0.8em;
-    padding-right: 1em;
-    clear: both;
 }
-
 
         /* BOCADILLOS */
 
-        .bocadillo-redondo-usu1 {
+        .bocadillo-cuadrado-usu1 {
+            color: rgb(148,124,251);
             position: relative;
-            height: 100px;
-            width: 250px;
+            height: 50px;
+            width: 300px;
             background: white;
-            border-radius: 50%;
             box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
-            padding: 2em;
-            color:rgb(148,124,251);
-            margin: 1.5em;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 0.4em;
         }
-        .bocadillo-redondo-usu1:before {
-            border: 25px solid white;
+        .bocadillo-cuadrado-usu1:before {
+            border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
             border-right-color: transparent;
             position: absolute;
-            bottom: -38px;
-            right: 170px;
-            transform: rotate(+16deg);
-        } 
-
-        .bocadillo-redondo-usu2 {
-            position: relative;
-            height: 100px;
-            width: 250px;
-            background: white;
-            border-radius: 50%;
-            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
-            padding: 2em;
-            color:rgb(148,124,251);
-            margin: 1.5em;
+            bottom: -20px;
+            right: 260px;
+            transform: rotate(-67deg);
         }
 
-        .bocadillo-redondo-usu2:before {
-            border: 27px solid white;
+        .bocadillo-cuadrado-usu2 {
+            color: rgb(148,124,251);
+            position: relative;
+            height: 50px;
+            width: 300px;
+            background: white;
+            box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 0.4em;
+            margin-right: 20px;
+        }
+        .bocadillo-cuadrado-usu2:before {
+            border: 20px solid white;
             content: '';
             border-left-color: transparent;
             border-bottom-color: transparent;
             border-right-color: transparent;
             position: absolute;
-            bottom: -42px;
-            right: 40px;
-            transform: rotate(-16deg);
-        } 
-
-
-
-
+            bottom: -20px;
+            left: 260px;
+            transform: rotate(+65deg);
+        }
 

@@ -1,10 +1,13 @@
 body{
     margin-top:20px;
     color: #1a202c;
-    text-align: left;
-    background-color: #7250FF;
     padding: 0.5em;
     padding-top: 0;
+    background-color: rgb(148, 124, 251);
+    text-align: justify;
+    background-image: url('../img/fondo.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
@@ -20,12 +23,16 @@ body{
     background-clip: border-box;
     border: 0 solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    width: 85%;
 }
 
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1rem;
+}
+.row{
+   padding-left: 8%;
 }
 a{
     text-decoration: none;
@@ -34,4 +41,16 @@ a{
 h4{
     text-align: center;
     color: #7250FF;
+}
+@font-face {
+    font-family: marlo;
+    src: url("../fonts/mark_my_words.ttf");
+}
+
+#titulo{
+font-family: marlo;
+}
+
+.gafas {
+transform: rotate(22deg);
 }
