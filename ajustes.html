@@ -10,6 +10,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        window.onload=function () {
+        document.getElementById('enlace').onclick=function(e) {
+        e.preventDefault();
+        var galeria=document.getElementById('galeria');
+        var toast = new bootstrap.Toast(galeria);
+        toast.show();
+        // const music = new Audio('adf.wav');
+        // music.play();
+        // music.loop =true;
+        // music.playbackRate = 2;
+        // music.pause();qqazszdgfbgtyj
+    };
+}
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light m-5 rounded">
@@ -42,65 +59,30 @@
     </nav>
 
     <div class="container-fluid">
-        <div class="mb-3 row">
-            <div class="col">
-                <div class="card">
-                    <div class=" card-body">
-                        <div class="row mb-3">
-                            <h4><i class="material-icons mr-2">Ajustes de cuenta</i></h4>
-                        </div>
-                        <div class="row container" style="text-align: center;">
-                            <div class="row mb-3">
-                                <a href="">Cambiar nombre de usuario</a>
+        <div class="row mb-3">
+            <div class=" col-6">
+                <div class="row">
+                    <div class="col-lg-10 mb-3">
+                      <div class="card" style="padding: 0.5em;">
+                        <div class="card-body">
+                            <div class="row">
+                              <div class="col-4">  
+                                    <img src="img/Marco2.png" alt="Marco" class="img-thumbnail " >
+                                    <i class="material-icons">
+                                        <a id="enlace" class="material-icons" href="#">Material sensual</a>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <div class="jumbotron jumbotron-fluid">
+                                        <div class="container">
+                                          <h1 class="display-4">Preferencias</h1>
+                                          <p class="lead">Modifica tus preferencias para encontrar al ornitorrinco indicado.</p>
+                                        </div>
+                                      </div>
+                                </div>
                             </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar descripción</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar datos de usuario</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar contraseña</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class=" card-body">
-                        <div class="row mb-3">
-                            <h4><i class="material-icons mr-2">Ajustes de la aplicación</i></h4>
-                        </div>
-                        <div class="row container" style="text-align: center;">
-                            <div class="row mb-3">
-                                <a href="">Tema</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Notificaciones</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Privacidad</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Seguridad</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="mb-3 row">
-            <div class="col">
-                <div class="card">
-                    <div class=" card-body">
-                        <div class="row mb-3">
-                            <h4><i class="material-icons mr-2">Preferencias</i></h4>
-                        </div>
-                        <div class="row container" style="text-align: center;">
-                            <div class="row mb-3">
+                            <div class="mt-3 col">
+                              <div class="row mb-3 text-center">
                                 <a class="mb-1" href="">Rango de edad</a>
                                 <div class="d-flex justify-content-between">
                                     <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon" viewBox="0 0 16 16">
@@ -116,7 +98,7 @@
                                       </svg></small>
                                  </div>
                                  <input class="form-range" type="range" value="18" min="12" max="80" oninput="this.nextElementSibling.value = this.value+' años'"><output>18 años</output>
-                                
+
                             </div>
                             <div class="row mb-3">
                                 <a class="mb-1" href="">Estado</a>
@@ -134,36 +116,123 @@
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Rica/o</small>
                                 </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
-
             </div>
             <div class="col">
-                <div class="card">
-                    <div class=" card-body">
-                        <div class="row mb-3">
-                            <h4><i class="material-icons mr-2">Ajustes de cuenta</i></h4>
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class=" card-body">
+                                <div class="row mb-3">
+                                    <h4><i class="material-icons mr-2">Ajustes de cuenta</i></h4>
+                                </div>
+                                <div class="row container" style="text-align: center;">
+                                    <div class="row mb-3">
+                                        <a href="">Cambiar nombre de usuario</a>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <a href="">Cambiar descripción</a>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <a href="">Cambiar datos de usuario</a>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <a href="">Cambiar contraseña</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row container" style="text-align: center;">
-                            <div class="row mb-3">
-                                <a href="">Cambiar nombre de usuario</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar descripción</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar datos de usuario</a>
-                            </div>
-                            <div class="row mb-3">
-                                <a href="">Cambiar contraseña</a>
+        
+                    </div>
+                    <div class="row mb-3">
+                        <div class="card">
+                            <div class=" card-body">
+                                <div class="row mb-3">
+                                    <h4><i class="material-icons mr-2">Ajustes de la aplicación</i></h4>
+                                </div>
+                                <div class="row container" style="text-align: center;">
+                                    <div class="col-6 mb-3">
+                                        <a href="">Tema</a>
+                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#947cfb" title="Choose your color">
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a href="">Notificaciones</a>
+                                        <select class="form-select" size="3" aria-label="size 3 select example">
+                                            <option selected>Seleccione tono</option>
+                                            <option value="1"><audio src="sound/iphone-notificacion.mp3" controls>Iphone</audio></option>
+                                            <option value="2"><audio src="sound/messenger-tono-mensaje-.mp3" controls>Messenger</audio></option>
+                                            <option value="3"><audio src="sound/samsung-sound.mp3" controls></audio>Samsung</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class=" row container" style="text-align: center;">
+                                    <div class="col-6 mb-3">
+                                        <a href="">Privacidad</a>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <a href="">Seguridad</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+        
+                    </div>
+                   
+        
                     </div>
                 </div>
-
             </div>
+            
         </div>
+    </div>
+    <div id="galeria" class="toast">
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="img/Marco1.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+          
+              <img
+                src="img/Marco2.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+              />
+          
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+              />
+          
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+              />
+            </div>
+          </div>
     </div>
 
 </body></html>
