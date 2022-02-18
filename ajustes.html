@@ -10,6 +10,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        window.onload=function () {
+        document.getElementById('enlace').onclick=function(e) {
+        e.preventDefault();
+        var galeria=document.getElementById('galeria');
+        var toast = new bootstrap.Toast(galeria);
+        toast.show();
+        // const music = new Audio('adf.wav');
+        // music.play();
+        // music.loop =true;
+        // music.playbackRate = 2;
+        // music.pause();qqazszdgfbgtyj
+    };
+}
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-light bg-light m-5 rounded">
@@ -46,17 +63,58 @@
             <div class=" col-6">
                 <div class="row">
                     <div class="col-lg-10 mb-3">
-                      <div class="card">
+                      <div class="card" style="padding: 0.5em;">
                         <div class="card-body">
-                          <div class="d-flex flex-column align-items-center text-center">
-                            <img src="img/Marco2.png" alt="Marco" class="rounded-circle" width="150">
-                            <div class="mt-3">
-                              <h4>El Profe Marco</h4>
-                              <p class="text-secondary mb-1">La cerveza siempre fresquita</p>
-                              <p class="text-muted font-size-sm">Escalando en mis ratos libres</p>
-                              <i class="material-icons">
-                                  <a id="enlace" class="material-icons" href="#">Material sensual</a>
-                              </i>
+                            <div class="row">
+                              <div class="col-4">  
+                                    <img src="img/Marco2.png" alt="Marco" class="img-thumbnail " >
+                                    <i class="material-icons">
+                                        <a id="enlace" class="material-icons" href="#">Material sensual</a>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <div class="jumbotron jumbotron-fluid">
+                                        <div class="container">
+                                          <h1 class="display-4">Preferencias</h1>
+                                          <p class="lead">Modifica tus preferencias para encontrar al ornitorrinco indicado.</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="mt-3 col">
+                              <div class="row mb-3 text-center">
+                                <a class="mb-1" href="">Rango de edad</a>
+                                <div class="d-flex justify-content-between">
+                                    <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon" viewBox="0 0 16 16">
+                                        <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                      </svg></small>
+                                    <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
+                                      </svg></small>
+                                    <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-exchange" viewBox="0 0 16 16">
+                                        <path d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"/>
+                                      </svg></small>
+                                 </div>
+                                 <input class="form-range" type="range" value="18" min="12" max="80" oninput="this.nextElementSibling.value = this.value+' años'"><output>18 años</output>
+
+                            </div>
+                            <div class="row mb-3">
+                                <a class="mb-1" href="">Estado</a>
+                                <div class="d-flex justify-content-between">
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Soltera/o</small>
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Casada/o</small>
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Complicado</small>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <a class="mb-1" href="">Aficiones</a>
+                                <div class="d-flex justify-content-between">
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Escalar</small>
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Borracha/o</small>
+                                    <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Rica/o</small>
+                                </div>
                             </div>
                           </div>
                         </div>
@@ -96,16 +154,25 @@
                                     <h4><i class="material-icons mr-2">Ajustes de la aplicación</i></h4>
                                 </div>
                                 <div class="row container" style="text-align: center;">
-                                    <div class="row mb-3">
+                                    <div class="col-6 mb-3">
                                         <a href="">Tema</a>
+                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#947cfb" title="Choose your color">
                                     </div>
-                                    <div class="row mb-3">
+                                    <div class="col-6 mb-3">
                                         <a href="">Notificaciones</a>
+                                        <select class="form-select" size="3" aria-label="size 3 select example">
+                                            <option selected>Seleccione tono</option>
+                                            <option value="1"><audio src="sound/iphone-notificacion.mp3" controls>Iphone</audio></option>
+                                            <option value="2"><audio src="sound/messenger-tono-mensaje-.mp3" controls>Messenger</audio></option>
+                                            <option value="3"><audio src="sound/samsung-sound.mp3" controls></audio>Samsung</option>
+                                        </select>
                                     </div>
-                                    <div class="row mb-3">
+                                </div>
+                                <div class=" row container" style="text-align: center;">
+                                    <div class="col-6 mb-3">
                                         <a href="">Privacidad</a>
                                     </div>
-                                    <div class="row mb-3">
+                                    <div class="col-6 mb-3">
                                         <a href="">Seguridad</a>
                                     </div>
                                 </div>
@@ -120,6 +187,52 @@
             </div>
             
         </div>
+    </div>
+    <div id="galeria" class="toast">
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="img/Marco1.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+          
+              <img
+                src="img/Marco2.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Wintry Mountain Landscape"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Mountains in the Clouds"
+              />
+          
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Boat on Calm Water"
+              />
+            </div>
+          
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+              />
+          
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Yosemite National Park"
+              />
+            </div>
+          </div>
     </div>
 
 </body></html>
