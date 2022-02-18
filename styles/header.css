@@ -506,17 +506,6 @@ border-color: #fc7fb2;
 color: #fff;
 }
 
-@media (max-width: 991.98px) {
-.social-media p a {
-border-color: #fff;
-width: 30px;
-height: 30px;
-}
-
-.social-media p a span {
-color: #fff;
-}
-}
 
 .order-lg-last {
 -webkit-box-ordinal-group: 14;
@@ -713,16 +702,11 @@ border-color: #fc7fb2;
 color: #fff;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1200px) {
 .social-media p a {
-border-color: #fff;
-width: 30px;
-height: 30px;
+text-decoration: none;
 }
 
-.social-media p a span {
-color: #fff;
-}
 }
 
 .tab-content>.active {

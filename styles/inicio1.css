@@ -2,21 +2,26 @@
 
 /* MIRAR POSICIONAMIENTO DE LA IMAGEN */
 body {
-<<<<<<< HEAD
-    background-image: url("../img/whats.jpg");
-    background-repeat: round;
-=======
-  background-color: rgb(148, 124, 251);
-  text-align: justify;
-  background-image: url('../img/fondo.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
->>>>>>> 64b9c1719f5d1e502f14dd7c5b530be9aeecd027
+    text-align: justify;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+}
+
+.carousel-control{
+  color: black
 }
 
 @font-face {
     font-family: marlo;
     src: url("../fonts/mark_my_words.ttf");
+}
+
+#titulo{
+  font-family: marlo;
+}
+
+.gafas {
+  transform: rotate(22deg);
 }
 
 .azulito{
@@ -35,24 +40,31 @@ body {
   margin-top: .5em;
 }
 
-.border-round{
-    border-radius: 4px;
-}
 
-.posi{
-    /* border: 3px solid red; */
-    background-color: rgb(214, 206, 206);
+.perfil{
+    background-color: rgb(208, 193, 214);
     border-radius: 5px;
 }
 
+.perfil li{
+  font-size: .8em;
+}
+
 .centrarTitulo{
-  display: block;
-  margin-left: 1.8em;
+  text-align: center;
 }
 
 header{
     background-color: rgb(148,124,251); 
     
+}
+
+.carousel-control-prev-icon{
+  background-image: url("../img/atras.png");
+}
+
+.carousel-control-next-icon{
+  background-image: url("../img/alante.png");
 }
 
 header h4{
@@ -62,18 +74,6 @@ header h4{
     top: 5px;
 }
 
-
-
-#gafas {
-    width: 52px; 
-    height: 42px;
-    filter: invert();
-    position: relative;
-    top:-5px;
-    left: 4px;
-    transform: rotate(22deg);
-    margin-right: 2em;
-}
   
   .text-small {
     font-size: 85%;
@@ -83,8 +83,14 @@ header h4{
     outline: 0;
   }
 
+  .prueba{
+    width: 100px;
+  }
+
 
   /* ANIMACIONES */
+
+  /* ANIMACIÓN ENTRADA FOTOS */
 
 .fade-in {
 	        animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -107,14 +113,123 @@ header h4{
       opacity: 1;
     }
   }
+
+
+/* ANIMACIÓN ENTRADA HEADER */
+
+  .slide-in-top {
+    -webkit-animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ANIMACIÓN ENTRADA PERFILES */
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ANIMACIÓN ENTRADA ANUNCIOS */
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
   
   /* RESPONSIVE */
   /* ------------------------------------ */
+
+  @media (max-width: 1320px){
+    .centrar{
+      width: 120px;
+      height: 120px;
+    }
+  }
 
   @media (max-width: 1150px){
     .centrar{
       width: 100px;
       height: 100px;
+    }
+
+    .perfiles h6{
+      font-size: .8em;
     }
   }
 

@@ -15,6 +15,14 @@
   <!-- Link hacia el css del header -->
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Para que se mueva el carrusel -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
 
   <title>Inicio</title>
 </head>
@@ -22,231 +30,295 @@
 <body>
 
   <!-- ----------------------------------     HEADER    ------------------------------------------->
-  <section class="ftco-section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light d-flex flex-wrap" id="ftco-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="inicio.html"><img src="img/gafas.png" width="10%" alt="marlo"></a>
-          <div class="social-media order-lg-last">
-            <p class="mb-0 d-flex">
-              <a href="perfil.html" class="d-flex align-items-center justify-content-center"><span
-                  class="fa fa-user-o"><i class="sr-only">Perfil</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-envelope"><i
-                    class="sr-only">Mensajes</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-cogs"><i
-                    class="sr-only">Ajustes</i></span></a>
-            </p>
-          </div>
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto mr-md-3">
-              <li class="nav-item active"><a href="inicio.html" class="nav-link">Inicio</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-              <li class="nav-item"><a href="consejos.html" class="nav-link">Consejos</a></li>
+  <nav class="navbar navbar-light bg-light m-5 rounded slide-in-top">
+    <div class="container-fluid p-3 d-flex flex-wrap item-aligns-center">
+
+      <div class="justify-content-lg-start item-aligns-center">
+        <a class="navbar-brand pl-5" href="inicio.html">
+          <span id="titulo">Marlo</span>
+          <img src="img/gafas.png" width="30" height="24"
+            class="d-inline-block align-text-top gafas item-aligns-center">
+        </a>
+      </div>
+
+      <ul class="nav item-aligns-center d-flex justify-content-center">
+        <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+        <li class="nav-item"><a href="consejos.html" class="nav-link">Consejos</a></li>
+        <li class="nav-item social-media order-lg cambia">
+          <p class="mb-0 d-flex">
+            <a href="mensajes.html" class=" d-flex align-items-center justify-content-center"><span
+                class="fa fa-envelope"></span></a>
+            <a href="ajustes.html" class="d-flex align-items-center justify-content-center"><span
+                class="fa fa-cogs"></span></a>
+          </p>
+        </li>
+        <li class="nav-item">
+
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/Marco2.png" width="40" height="40" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-sm-end text-small shadow" aria-labelledby="dropdownUser2">
+              <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
     </div>
-  </section>
+    </li>
+    </ul>
+    </div>
+  </nav>
   <!------------------------------------------------------------------------------------------------------------------------->
 
   <!-- ---------------------------------------------------     BODY    ------------------------------------------------------>
-
-  <div class="content-fluid row align-items-center justify-content-around">
+  <br>
+  <div class="content-fluid row justify-content-around">
     <!-- Menú izquierdo -->
-    <div class="col-md-4 mb-3 bg-light border-round text-center">
+    <div class="col-md-4 mb-3 bg-light rounded text-center slide-in-left">
       <h1>Noticias y anuncios</h1>
       <hr>
+
+      <!-- Noticia 1 -->
+      <div>
+        <span class="titulo">¿PROBLEMAS PARA LIGAR? Este hijo de puta liga como un cabrón, ¿¿¿QUIERES SABER
+          CÓMO???</span>
+        <br>
+        <br>
+        <img src="img/Diego.jpeg" alt="" width="250" height="250">
+        <br>
+        <img src="img/flecha_abajo.gif" alt="" width="50" height="50">
+        <br>
+        <span>¡Haz Click aquí!</span>
+
+      </div>
     </div>
 
-    <div class="col-md-7 mb-3 bg-light border-round ">
+    <!-- Menú de perfiles -->
+    <div class="col-md-6 mb-3 bg-light rounded perfiles slide-in-right" style="text-align: center;">
+      <div id="carouselInicio" class="carousel slide" data-ride="carousel" data-pause=hover >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="9999999">
+            <div class="row">
+              <div class="col mt-3">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-interval="9999999">
+            <div class="row">
+              <div class="col mt-3">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mt-3">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col mt-3">
+                <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">manué</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">angel_heredia7</p>
+              </div>
+
+              <div class="col mt-3">
+                <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle">
+                <p class="black mt-1">sekki</p>
+              </div>
+            </div>  
+          </div>
+          <a class="carousel-control-prev" href="#carouselInicio" role="button" data-slide="prev" style="font-size:50px">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselInicio" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+          </a>
+        </div>
+      </div>
       <!-- Bloque 1 de perfiles -->
-      <div class="content-fluid row align-items-center justify-content-around mt-4 mb-4">
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/SergioDiego.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-          <hr>
-        </div>
+      <!-- <div class="content-fluid row align-items-center justify-content-around mt-4 mb-4">
+    <div class="col-md-3 perfil fade-in">
+      <!-- Imagen -->
+      <!-- <img src="img/Alvaro.jpg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Alvaro Vega</h6>
+        <p></p>
       </div>
-
-      <!-- Bloque 2 de perfiles -->
-      <div class="content-fluid row align-items-center justify-content-around mb-4">
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/AntonioB.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/AntonioG.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Manu1.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-          
-        </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Angel.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Angel Heredia</h6>
       </div>
-
-      <!-- Bloque 3 de perfiles -->
-      <div class="content-fluid row align-items-center justify-content-around mb-4">
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Paco.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Paulaner1.jpg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Rafa.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-         
-        </div>
-      </div>
-
-      <!-- Bloque 4 de perfiles -->
-      <div class="content-fluid row align-items-center justify-content-around mb-4">
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Raquel.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/FJ0CK8AXEAoAz0F.jpg" width="150" height="150" class="rounded-circle centrar">
-          <hr>
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3 posi fade-in">
-          <!-- Imagen -->
-          <img src="img/Adan.jpeg" width="150" height="150" class="rounded-circle centrar">
-          <!-- Descripción -->
-          <div class="content-fluid align-items-center justify-content-center">
-            <h6 class="centrarTitulo">Alvaro Mamahuevo</h6>
-            <ul>
-              <li>Edad</li>
-              <li>Hobbies</li>
-              <li>Localidad</li>
-            </ul>
-          </div>
-          <hr>
-        </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/SergioDiego.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Diego Romero</h6>
       </div>
     </div>
   </div>
+
+  <div class="content-fluid row align-items-center justify-content-around mb-4">
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/AntonioB.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Antonio </h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/AntonioG.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Antonio</h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Manu1.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Manuel</h6>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content-fluid row align-items-center justify-content-around mb-4">
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Paco.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Paco</h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Paulaner1.jpg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Paula</h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Rafa.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Rafael</h6>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="content-fluid row align-items-center justify-content-around mb-4">
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Raquel.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Raquel</h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/FJ0CK8AXEAoAz0F.jpg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">TuChulito69</h6>
+      </div>
+    </div>
+    <div class="col-md-3 perfil fade-in">
+      <img src="img/Adan.jpeg" width="150" height="150" class="rounded-circle centrar">
+      <hr>
+      <div class="content-fluid align-items-center justify-content-center">
+        <h6 class="centrarTitulo">Adan</h6>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div> -->
 </body>
 
 </html>
