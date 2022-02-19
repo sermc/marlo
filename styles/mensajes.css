@@ -3,7 +3,26 @@ h1{
     color:white
 }
 
+/* Navegador */
+.navegador{
+    transform: scale(0.8);
+    margin-left: 10%;
+}
+
+#titulo{
+    font-family: marlo;
+}
+  
+.gafas {
+    transform: rotate(22deg);
+}
+
 /* FUENTE */
+
+@font-face {
+    font-family: marlo;
+    src: url("../fonts/mark_my_words.ttf");
+}
 
 @font-face {
     font-family: 'alba';
