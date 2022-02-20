@@ -13,18 +13,54 @@
 
     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     <script>
+        
+        const s1 = new Audio("sound/iphone-notificacion.mp3");
+        const s2 = new Audio("sound/messenger-tono-mensaje-.mp3");
+        const s3 = new Audio("sound/samsung-sound.mp3");
+        sonido=false;
         window.onload=function () {
         document.getElementById('enlace').onclick=function(e) {
         e.preventDefault();
         var galeria=document.getElementById('galeria');
         var toast = new bootstrap.Toast(galeria);
         toast.show();
-        // const music = new Audio('adf.wav');
-        // music.play();
-        // music.loop =true;
-        // music.playbackRate = 2;
-        // music.pause();qqazszdgfbgtyj
     };
+    document.getElementById("s1").onclick=function(e){
+        e.preventDefault();
+        sonido=!sonido;
+        if(sonido){
+        s1.play();
+        s1.loop =true;
+        }else{
+        s1.pause();
+        s3.pause();
+        s2.pause();
+        }
+    }
+    document.getElementById("s2").onclick=function(e){
+        e.preventDefault();
+        sonido=!sonido;
+        if(sonido){
+        s2.play();
+        s2.loop =true;
+        }else{
+        s1.pause();
+        s3.pause();
+        s2.pause();
+        }
+    }
+    document.getElementById("s3").onclick=function(e){
+        e.preventDefault();
+        sonido=!sonido;
+        if(sonido){
+        s3.play();
+        s3.loop =true;
+        }else{
+        s1.pause();
+        s3.pause();
+        s2.pause();
+        }
+    }
 }
     </script>
 </head>
@@ -61,8 +97,7 @@
     <div class="container-fluid">
         <div class="row mb-3">
             <div class=" col-6">
-                <div class="row">
-                    <div class="col-lg-10 mb-3">
+                    <div class="col mb-3">
                       <div class="card" style="padding: 0.5em;">
                         <div class="card-body">
                             <div class="row">
@@ -72,18 +107,18 @@
                                         <a id="enlace" class="material-icons" href="#">Material sensual</a>
                                     </i>
                                 </div>
-                                <div class="col">
+                                <div class="col-8">
                                     <div class="jumbotron jumbotron-fluid">
                                         <div class="container">
-                                          <h1 class="display-4">Preferencias</h1>
+                                          <h1 class="display-5">Preferencias</h1>
                                           <p class="lead">Modifica tus preferencias para encontrar al ornitorrinco indicado.</p>
                                         </div>
                                       </div>
                                 </div>
                             </div>
                             <div class="mt-3 col">
-                              <div class="row mb-3 text-center">
-                                <a class="mb-1" href="">Rango de edad</a>
+                              <div class="row mb-4 text-center">
+                                <a class="mb-2" href="">Rango de edad</a>
                                 <div class="d-flex justify-content-between">
                                     <small><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon" viewBox="0 0 16 16">
                                         <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
@@ -100,16 +135,16 @@
                                  <input class="form-range" type="range" value="18" min="12" max="80" oninput="this.nextElementSibling.value = this.value+' años'"><output>18 años</output>
 
                             </div>
-                            <div class="row mb-3">
-                                <a class="mb-1" href="">Estado</a>
+                            <div class="row mb-4 text-center">
+                                <a class="mb-2" href="">Estado</a>
                                 <div class="d-flex justify-content-between">
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Soltera/o</small>
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Casada/o</small>
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Complicado</small>
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <a class="mb-1" href="">Aficiones</a>
+                            <div class="row mb-3 text-center" >
+                                <a class="mb-2" href="">Aficiones</a>
                                 <div class="d-flex justify-content-between">
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Escalar</small>
                                     <small><span><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></span> Borracha/o</small>
@@ -120,7 +155,6 @@
                         </div>
                       </div>
                     </div>
-                </div>
             </div>
             <div class="col">
                     <div class="row mb-3">
@@ -155,25 +189,63 @@
                                 </div>
                                 <div class="row container" style="text-align: center;">
                                     <div class="col-6 mb-3">
-                                        <a href="">Tema</a>
-                                        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#947cfb" title="Choose your color">
-                                    </div>
+                                        <div class="row mb-3">
+                                            <a href="">Tema</a>
+                                        </div>
+                                        <div class="row">
+                                            <input type="color" class="form-control form-control-color col" id="exampleColorInput" value="#947cfb" title="Choose your color">
+                                            <input type="color" class="form-control form-control-color col" id="exampleColorInput" value="#FF5733" title="Choose your color">
+                                            <input type="color" class="form-control form-control-color col" id="exampleColorInput" value="#33FFA7" title="Choose your color">
+                                        </div>
+                                        </div>
                                     <div class="col-6 mb-3">
-                                        <a href="">Notificaciones</a>
-                                        <select class="form-select" size="3" aria-label="size 3 select example">
-                                            <option selected>Seleccione tono</option>
-                                            <option value="1"><audio src="sound/iphone-notificacion.mp3" controls>Iphone</audio></option>
-                                            <option value="2"><audio src="sound/messenger-tono-mensaje-.mp3" controls>Messenger</audio></option>
-                                            <option value="3"><audio src="sound/samsung-sound.mp3" controls></audio>Samsung</option>
-                                        </select>
+                                        <div class="row mb-3">
+                                            <a  href="">Notificaciones</a>
+                                        </div>
+                                        <div class="row">
+                                            <a class="audio col" id="s1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+                                              </svg></a>
+                                            <a class="audio col" id="s2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+                                              </svg></a>
+                                            <a class="audio col" id="s3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                                                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                                                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                                                <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+                                              </svg></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class=" row container" style="text-align: center;">
                                     <div class="col-6 mb-3">
-                                        <a href="">Privacidad</a>
+                                        <div class="row mb-3">
+                                            <a href="">Privacidad</a>
+                                        </div>
+                                        <div class="row">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                                                <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                                                <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                                            </svg></span>
+                                        </div>
                                     </div>
                                     <div class="col-6 mb-3">
-                                        <a href="">Seguridad</a>
+                                        <div class="row mb-3">
+                                            <a href="">Seguridad</a>
+                                        </div>
+                                        <div class="row">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-fingerprint" viewBox="0 0 16 16">
+                                                <path d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z"/>
+                                                <path d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332c0 .409-.022.816-.066 1.221A.5.5 0 0 1 6 8.447c.04-.37.06-.742.06-1.115V7Zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8Zm-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329Z"/>
+                                                <path d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334Zm.3 1.67a.5.5 0 0 1 .449.546 10.72 10.72 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.72 9.72 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z"/>
+                                                <path d="M3.902 4.222a4.996 4.996 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 3.996 3.996 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556Zm6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705ZM3.68 5.842a.5.5 0 0 1 .422.568c-.029.192-.044.39-.044.59 0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.531 6.531 0 0 0 3.058 7c0-.25.019-.496.054-.736a.5.5 0 0 1 .568-.422Zm8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.51 10.51 0 0 0 .584-2.678.5.5 0 0 1 .54-.456Z"/>
+                                                <path d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z"/>
+                                              </svg></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -191,46 +263,10 @@
     <div id="galeria" class="toast">
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <img
-                src="img/Marco1.png"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-              />
-          
-              <img
-                src="img/Marco2.png"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape"
-              />
-            </div>
-          
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds"
-              />
-          
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-              />
-            </div>
-          
-            <div class="col-lg-4 mb-4 mb-lg-0">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea"
-              />
-          
-              <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park"
-              />
+            <div class="mb-4">
+                <label for="formFileMultiple" class="form-label display-2">Material sensual</label>
+                <p>Añade cositas para enamorar a todos los ornitorrincos.</p>
+                <input class="form-control" type="file" id="formFileMultiple" multiple />
             </div>
           </div>
     </div>

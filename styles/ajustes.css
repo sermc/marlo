@@ -15,12 +15,18 @@ body{
     background-color:black;
 }
 
+.audio{
+    text-decoration: none;
+    color: #1a202c;
+}
+
 .toast{
     padding: 0.5em;
     width: 70%;
-    transform: translate(23% , -85%);
-    background-color: #ffffff;
+    transform: translate(23% , -180%);
+    background-color: #b367df;
     transition: all 0.5s;
+    color: #fff;
 }
 
 .card {

@@ -4,17 +4,25 @@ body{
     background-color: rgb(148, 124, 251);
     text-align: justify;
     background-image: url('../img/fondo.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
 
-}
-.main-body {
-    padding: 15px;
 }
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 
+.container-fluid{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+@font-face {
+    font-family: marlo;
+    src: url("../fonts/mark_my_words.ttf");
+}
+#titulo{
+    font-family: marlo;
+    }
 .card {
     position: relative;
     display: flex;
