@@ -4,21 +4,73 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="shortcut icon" href="img/gafas.png"/>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/consejos.css"/>
+
+    <!-- Link hacia el css del header -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
   
     <title>Aconsejando a tu corazón</title>
     
   </head>
   <body>
-    <div class="container-fluid mt-4" style="width: 90%;">
-        <div id="covid" class="row p-3">
+    <!-- HEADER -->
+
+    <nav class="navbar navbar-light bg-light m-5 rounded slide-in-top">
+      <div class="container-fluid p-3 d-flex flex-wrap item-aligns-center">
+  
+        <div class="justify-content-lg-start item-aligns-center">
+          <a class="navbar-brand pl-5" href="inicio.html">
+            <span id="titulo">Marlo</span>
+            <img src="img/gafas.png" width="50" height="24"
+              class="d-inline-block align-text-top gafas item-aligns-center">
+          </a>
+        </div>
+  
+        <ul class="nav item-aligns-center d-flex justify-content-center">
+          <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="consejos.html" class="nav-link">Consejos</a></li>
+          <li class="nav-item social-media order-lg cambia">
+            <p class="mb-0 d-flex">
+              <a href="mensajes.html" class=" d-flex align-items-center justify-content-center"><span
+                  class="fa fa-envelope"></span></a>
+              <a href="ajustes.html" class="d-flex align-items-center justify-content-center"><span
+                  class="fa fa-cogs"></span></a>
+            </p>
+          </li>
+          <li class="nav-item">
+  
+            <div class="flex-shrink-0 dropdown">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/Marco2.png" width="40" height="40" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-sm-end text-small shadow" aria-labelledby="dropdownUser2">
+                <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- -------------------------------------- -->
+
+    <div class="container-fluid mt-4" style="width: 94%;">
+        <div id="covid" class="row p-3 slide-in-left rounded bg-light">
           
-          <div class="col">
+          <div class="col ">
             <h1>CÓMO LIGAR CON COVID, DE LA MANO DE NUESTROS EXPERTOS</h1>
             <ul class="mt-3">
               <li>Manten los 2 metros de distancia, 1 por el covid y otro por si no te has duchado</li>
@@ -32,13 +84,13 @@
             </ul>
           </div>
           <div class="col-3">
-            <img src="img/mona.jpg" class="rounded-circle fadeImg" style="opacity: 0.7; width:100%;">
+            <img src="img/mona.jpg" class="rounded-circle fadeImg ima" style="opacity: 0.7; width:100%;">
 
           </div>
         </div>
-        <div id="covid" class="row p-3 mt-4">
+        <div id="covid" class="row p-3 mt-4 slide-in-right rounded bg-light">
           <div class="col-3">
-            <img src="img/Dfoto.jpeg" class="rounded-circle fadeImg" style="opacity: 0.7; width:100%;">
+            <img src="img/Dfoto.jpeg" class="rounded-circle fadeImg ima" style="opacity: 0.7; width:100%;">
           </div>
           <div class="col">
             <h1>¿PROBLEMAS PARA LIGAR? Este hijo de puta liga como un cabrón, ¿¿¿QUIERES SABER CÓMO???</h1>
@@ -54,23 +106,31 @@
           
         </div>
 
-        <div id="covid" class="row p-3 mt-4">
+        <div id="covid" class="row p-3 mt-4 slide-in-left rounded bg-light">
           
           <div class="col">
             <h1>CÓMO LIGAR CON COVID, DE LA MANO DE NUESTROS EXPERTOS</h1>
-            <p class="col">sjhdf</p>
+            <p class="col">
+              <ul class="mt-3">
+              <li>¡Él se ducha! Debajo de tanta mugre hay un ser humano</li>
+              <li>Hay que usar jabón ehhhhhh, qué nos conocemos</li>
+              <li>¡No olvides llevar a tu cita tu fiel paño con cloroformo!</li>
+              <li>Acepta que lo de "el niño más bonito del mundo" solo te lo va a decir tu madre</li>
+              <li>Baja la tapa del váter hasta que piensen que lo haces normalmente</li>
+              <li></li>
+            </ul></p>
 
           </div>
           <div class="col-3">
-            <img src="img/mona.jpg" class="rounded-circle fadeImg" style="opacity: 0.7; width:100%;">
-
+            <img src="img/mona.jpg" class="rounded-circle fadeImg ima" style="opacity: 0.7; width:100%;">
+            
           </div>
         </div>
     </div>
 	
 
-	<footer class="container-fluid mt-5 text-center">
-		<h3><i>Más allá de la percepción subjetiva de la belleza, una app para buenas personas y simpáticos</i></h3>
+	<footer class="container-fluid mt-5 mb-3 text-center align-items-center footerEstilo rounded">
+		<h2><i>Más allá de la percepción subjetiva de la belleza, una app para buenas personas y simpáticos</i></h2>
     <p>No nos responsabilizamos de los robos, cortes, pérdida de vista, desmayos, problemas estomacales concurridos durante su cita </p>
 	</footer>
     
