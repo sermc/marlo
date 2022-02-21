@@ -21,7 +21,7 @@
         e.preventDefault();
         var galeria=document.getElementById('galeria');
         var toast = new bootstrap.Toast(galeria);
-        toast.show();
+        toast.show(30);
     };
 }
     </script>
@@ -48,10 +48,21 @@
                 </p>
             </li>
             <li class="nav-item">
-                <a href="perfil.html">
-                    <img src="img/Marco2.png" width="40" height="40" class="rounded-circle">
+
+              <div class="flex-shrink-0 dropdown">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="img/Marco2.png" width="40" height="40" class="rounded-circle">
                 </a>
-            </li>
+                <ul class="dropdown-menu dropdown-menu-sm-end text-small shadow" aria-labelledby="dropdownUser2">
+                  <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                </ul>
+              </div>
+        </li>
         </ul>
     </div>
 </nav>
