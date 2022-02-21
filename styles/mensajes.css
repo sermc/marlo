@@ -17,6 +17,10 @@ font-family: marlo;
 .gafas {
 transform: rotate(22deg);
 }
+
+.enlace{
+    text-decoration: none;
+}
 /* FUENTE */
 
 @font-face {
@@ -52,17 +56,6 @@ h1{
     transform: scale(1.4)
 }
 
-
-.a1{
-    color:white; 
-    margin: 10%; 
-    transform: scale(1.4); 
-    transition: all 0.5s; 
-    -webkit-text-stroke: 0.2px rgb(148,124,251)
-}
-
-.a1:hover{
-    color: rgba(255, 255, 255, 0.787); transform: scale(1.8); transition: all 0.5s;}
 .nav1{
     background-color: rgba(rgb(255, 255, 255), rgb(87, 235, 255),rgb(252, 255, 215), 50)
 }
