@@ -161,6 +161,7 @@ h1{
     color: rgb(148,124,251);
     text-align: right;
     bottom: 10px;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
 }
 
 
