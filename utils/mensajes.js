@@ -23,8 +23,8 @@ function activarchat(chat){
         break;
         case ("Raquel"):
             document.getElementById("Raquel").classList.add("seleccionado");
-            document.getElementById("dos").classList.remove("invisible");
-            document.getElementById("dos").classList.add("visible");
+            document.getElementById("cinco").classList.remove("invisible");
+            document.getElementById("cinco").classList.add("visible");
         break;
         case ("Alvaro"):
             document.getElementById("Alvaro").classList.add("seleccionado");
@@ -38,8 +38,28 @@ function activarchat(chat){
         break;
         case ("MariaJ"):
             document.getElementById("MariaJ").classList.add("seleccionado");
-            document.getElementById("cinco").classList.remove("invisible");
-            document.getElementById("cinco").classList.add("visible");
+            document.getElementById("dos").classList.remove("invisible");
+            document.getElementById("dos").classList.add("visible");
+        break;
+        case ("Alejandro"):
+            document.getElementById("Alejandro").classList.add("seleccionado");
+            document.getElementById("seis").classList.remove("invisible");
+            document.getElementById("seis").classList.add("visible");
+        break;
+        case ("Antonio"):
+            document.getElementById("Antonio").classList.add("seleccionado");
+            document.getElementById("siete").classList.remove("invisible");
+            document.getElementById("siete").classList.add("visible");
+        break;
+        case ("Vodafone"):
+            document.getElementById("Vodafone").classList.add("seleccionado");
+            document.getElementById("ocho").classList.remove("invisible");
+            document.getElementById("ocho").classList.add("visible");
+        break;
+        case ("Chati"):
+            document.getElementById("Chati").classList.add("seleccionado");
+            document.getElementById("nueve").classList.remove("invisible");
+            document.getElementById("nueve").classList.add("visible");
         break;
     }
 }

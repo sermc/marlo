@@ -1,3 +1,5 @@
+::-webkit-scrollbar {display: none;}
+
 h1{
     /*color: rgb(148,124,251)*/
     color:white
@@ -41,7 +43,8 @@ body
     background-color: rgb(148, 124, 251);
     text-align: justify;
     background-image: url('../img/fondo.jpg');
-    background-size: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
     
 }
 
@@ -64,7 +67,7 @@ h1{
 
 .uno-container{
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 .p-container {
@@ -87,6 +90,8 @@ h1{
     color: rgb(148,124,251);
     overflow: hidden;
     text-align: left;
+    overflow: auto;
+    height: 100%;
 }
 
 #chats{
@@ -120,7 +125,17 @@ h1{
     /*border: 2px solid white; */
     color: white;
     overflow: hidden;
-    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+#bloqueado{
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    background-color: rgba(173, 29, 29, 0.815);
+    border-radius: 5px;
+    padding: 0.2em;
 }
 
 .usu1{
@@ -136,10 +151,10 @@ h1{
 
 
 #nMensaje {
-    position: absolute;
     width: 90%;
+    top: 40%;
     height: 40px;
-    margin-left: -740px;
+    margin: 5%;
     padding: 0.2em;
     border-radius: 5px;
     border: 0px solid white;
@@ -148,35 +163,6 @@ h1{
     bottom: 10px;
 }
 
-@media (max-width: 1080px) and (min-width: 800px){
-    #nMensaje {
-        position: absolute;
-        width: 90%;
-        height: 40px;
-        margin-left: -450px;
-        padding: 0.2em;
-        border-radius: 5px;
-        border: 0px solid white;
-        color: rgb(148,124,251);
-        text-align: right;
-        bottom: 10px;
-    }
-}
-
-@media(max-width: 800px){
-    #nMensaje {
-        position: absolute;
-        width: 90%;
-        height: 40px;
-        margin-left: -150px;
-        padding: 0.2em;
-        border-radius: 5px;
-        border: 0px solid white;
-        color: rgb(148,124,251);
-        text-align: right;
-        bottom: 10px;
-    }
-}
 
 input[type="text"]:focus{   
     border-color: rgba(147, 106, 241, 0.89);
@@ -200,6 +186,7 @@ input[type="text"]:focus{
             margin-top: 40px;
             margin-left: 20px;
             padding: 0.4em;
+            text-align: justify;
         }
         .bocadillo-cuadrado-usu1:before {
             border: 12px solid white;
@@ -225,6 +212,7 @@ input[type="text"]:focus{
             margin-right: 20px;
             text-align: right;
             padding-right: 1em;
+            text-align: justify;
         }
         .bocadillo-cuadrado-usu2:before {
             border: 20px solid white;
@@ -252,4 +240,9 @@ input[type="text"]:focus{
 .seleccionado{
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+}
+
+.fecha{
+    font-size: 0.8em;
+    text-align: right !important;
 }
