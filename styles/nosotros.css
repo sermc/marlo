@@ -12,14 +12,6 @@ body {
 }
 
 /* -------- ANIMACIONES -------- */
-/* ROTACIÓN */
-@keyframes rotacion{
-    0%{
-        transform:rotate(0)
-    }100%{
-        transform:rotate(360deg)
-    }
-}
 
 /* ROTACIÓN CON ZOOM */
 @keyframes rotacion-zoom{
@@ -84,8 +76,39 @@ body {
     }
 }
 
+/* VUELTA VERTICAL */
+@-webkit-keyframes vuelta-diagonal {
+    0% {
+      -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
+              transform: scale(2) rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+              transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    }
+  }
+  @keyframes vuelta-diagonal {
+    0% {
+      -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+              transform: scale(1) rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
+              transform: scale(2) rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+              transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    }
+  }
+
 #preRaquel:hover {
-    animation:rotacion .6s ease-in-out both;
+    -webkit-animation: vuelta-diagonal 0.7s linear both;
+	animation: vuelta-diagonal 0.7s linear both;
 }
 #preSergio:hover{
     animation:rotacion-zoom .65s linear both;
