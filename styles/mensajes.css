@@ -102,10 +102,11 @@ h1{
     background-size: 500%;
     color: rgb(148,124,251);
     overflow: hidden;
-    text-align: center;
+    text-align: left;
 }
 
 #chats{
+    text-align: center;
     font-family: alba; 
     color: white;
     -webkit-text-stroke: 1px rgb(148,124,251); 
@@ -123,9 +124,9 @@ img{
     width: 70px;
     height: 70px;
     margin-left: 12%;
-    margin-top: 5px;
-    margin-right: 10px;
-    
+    margin-top: 7px;
+    margin-right: 20px;
+    margin-bottom: 7px;
 }
 
 /* COLUMNA 2 CHAT ACTIVO */
@@ -135,6 +136,7 @@ img{
     /*border: 2px solid white; */
     color: white;
     overflow: hidden;
+    position: relative;
 }
 
 .usu1{
@@ -148,15 +150,58 @@ img{
     clear: both;
 }
 
+
 #nMensaje {
-    position: relative;
-    background-color: white;
-    color: rgb(148,124,251);
+    position: absolute;
     width: 90%;
-    top: 90%;
-    height: 50px;
-    margin-left: 5%;
+    height: 40px;
+    margin-left: -740px;
+    padding: 0.2em;
     border-radius: 5px;
+    border: 0px solid white;
+    color: rgb(148,124,251);
+    text-align: right;
+    bottom: 10px;
+}
+
+@media (max-width: 1080px) and (min-width: 800px){
+    #nMensaje {
+        position: absolute;
+        width: 90%;
+        height: 40px;
+        margin-left: -450px;
+        padding: 0.2em;
+        border-radius: 5px;
+        border: 0px solid white;
+        color: rgb(148,124,251);
+        text-align: right;
+        bottom: 10px;
+    }
+}
+
+@media(max-width: 800px){
+    #nMensaje {
+        position: absolute;
+        width: 90%;
+        height: 40px;
+        margin-left: -150px;
+        padding: 0.2em;
+        border-radius: 5px;
+        border: 0px solid white;
+        color: rgb(148,124,251);
+        text-align: right;
+        bottom: 10px;
+    }
+}
+
+input[type="text"]:focus{   
+    border-color: rgba(147, 106, 241, 0.89);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(126, 239, 104);
+    outline: 0 none;
+  }
+
+#nMensaje:hover, #nMensaje:focus {
+    border: 2px solid rgb(148,124,251);
 }
 
         /* BOCADILLOS */
