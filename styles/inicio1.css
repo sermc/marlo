@@ -11,9 +11,22 @@ body {
   color: black
 }
 
+.test{
+  background-color: rgb(208, 193, 214);
+  width: 20px;
+  font-size: .9em;
+}
+
+
+
 @font-face {
     font-family: marlo;
     src: url("../fonts/mark_my_words.ttf");
+}
+
+.titulo-perfiles{
+  font-family: marlo;
+  font-size: 2em;
 }
 
 #titulo{
@@ -54,25 +67,59 @@ body {
   text-align: center;
 }
 
-header{
-    background-color: rgb(148,124,251); 
-    
+.noticia span{
+  font-weight: bolder;
+  font-size: 1.1em;
 }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.noticia{
+  background-color: rgb(208, 193, 214);
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.noticias {
+  background-color: rgb(226, 217, 230);
+  padding: 1em;
+}
+
+.enlace{
+  text-decoration: none;
+  border: 3px solid rgb(145, 115, 156);
+  padding: .5em;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(188, 167, 196);
+}
+
+.enlace:hover{
+  color: white;
+  font-weight: bolder;
+}
+
 
 .carousel-control-prev-icon{
   background-image: url("../img/atras.png");
+  position: relative;
+  right: 29px;
+  width: 70px;
+  height: 70px;
 }
 
 .carousel-control-next-icon{
   background-image: url("../img/alante.png");
+  position: relative;
+  left: 29px;
+  width: 70px;
+  height: 70px;
 }
 
-header h4{
-    font-family: marlo;
-    color: white;
-    position: relative;
-    top: 5px;
-}
+
 
   
   .text-small {
@@ -83,9 +130,6 @@ header h4{
     outline: 0;
   }
 
-  .prueba{
-    width: 100px;
-  }
 
 
   /* ANIMACIONES */
@@ -210,6 +254,14 @@ header h4{
     opacity: 1;
   }
 }
+
+/* Botón de vibrar */
+
+.enlace{-webkit-animation:vibrate-3 .5s linear infinite both;animation:vibrate-3 .5s linear infinite both}
+
+
+ @-webkit-keyframes vibrate-3{0%{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}20%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}30%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}50%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}70%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}80%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}90%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-3{0%{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}20%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}30%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}50%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}70%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}80%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}90%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}
+
 
   
   /* RESPONSIVE */
