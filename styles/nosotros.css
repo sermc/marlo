@@ -9,115 +9,176 @@ body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
     background-repeat: no-repeat;
+    background-size: cover ;
 }
 
 /* -------- ANIMACIONES -------- */
 
-/* ROTACIÓN CON ZOOM */
-@keyframes rotacion-zoom{
-    0%{
-        transform:scale(1) rotateZ(0)
-    }50%{
-        transform:scale(2) rotateZ(180deg)
-    }100%{
-        transform:scale(1) rotateZ(360deg)
-    }
-}
-
-/* ROTACIÓN DOBLE */
-@-webkit-keyframes rotacion-doble {
+  /* ROTACION */
+  @-webkit-keyframes rotacion{
     0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
     100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
   }
-  @keyframes rotacion-doble {
+  @keyframes rotacion {
     0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
     }
     100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
     }
   }
 
-/* ROTACIÓN HORIZONTAL CON ZOOM */
-@-webkit-keyframes rotacion-horizontal-zoom {
+  /* ENTRADA POR LA DERECHA */
+  @-webkit-keyframes entrada-derecha {
     0% {
-      -webkit-transform: scale(1) rotateY(0);
-              transform: scale(1) rotateY(0);
-    }
-    50% {
-      -webkit-transform: scale(2) rotateY(180deg);
-              transform: scale(2) rotateY(180deg);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
     }
     100% {
-      -webkit-transform: scale(1) rotateY(360deg);
-              transform: scale(1) rotateY(360deg);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     }
-  }
-@keyframes rotacion-horizontal-zoom {
+    }
+    @keyframes entrada-derecha {
     0% {
-        -webkit-transform: scale(1) rotateY(0);
-                transform: scale(1) rotateY(0);
-    }
-    50% {
-        -webkit-transform: scale(2) rotateY(180deg);
-                transform: scale(2) rotateY(180deg);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
     }
     100% {
-        -webkit-transform: scale(1) rotateY(360deg);
-                transform: scale(1) rotateY(360deg);
-    }
-}
-
-/* VUELTA VERTICAL */
-@-webkit-keyframes vuelta-diagonal {
-    0% {
-      -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
-              transform: scale(1) rotate3d(1, 1, 0, 0deg);
-    }
-    50% {
-      -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
-              transform: scale(2) rotate3d(1, 1, 0, -180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
-              transform: scale(1) rotate3d(1, 1, 0, -360deg);
-    }
-  }
-  @keyframes vuelta-diagonal {
-    0% {
-      -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
-              transform: scale(1) rotate3d(1, 1, 0, 0deg);
-    }
-    50% {
-      -webkit-transform: scale(2) rotate3d(1, 1, 0, -180deg);
-              transform: scale(2) rotate3d(1, 1, 0, -180deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
-              transform: scale(1) rotate3d(1, 1, 0, -360deg);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     }
   }
 
-#preRaquel:hover {
-    -webkit-animation: vuelta-diagonal 0.7s linear both;
-	animation: vuelta-diagonal 0.7s linear both;
+  /* ENTRADA POR LA IZQUIERDA */
+  @-webkit-keyframes entrada-izquierda {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes entrada-izquierda {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+  }
+
+  /* ENTRADA FOTOS INTRO */
+  @-webkit-keyframes fotos-intro {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fotos-intro {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+  }
+
+  /* APARICION */
+    @-webkit-keyframes aparicion {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes aparicion {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+
+#prePaula:hover,#preAlvaro:hover, #preSergio:hover, #preRaquel:hover, #preDiego:hover {
+  -webkit-animation: rotacion 0.6s ease-in-out both;
+  animation: rotacion 0.6s ease-in-out both;
 }
-#preSergio:hover{
-    animation:rotacion-zoom .65s linear both;
+
+#div-alvaro, #div-paula, #div-sergio, #div-raquel, #div-diego {
+  background-color: white;
+  border-radius: 5px;
+  padding: .5em;
 }
-#prePaula:hover {
-    -webkit-animation: rotacion-doble 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	animation: rotacion-doble 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+#descripcion {
+  background-color: white;
+  border-radius: 5px;
+  padding: .5em;
+
+  -webkit-animation-name: aparicion;
+  animation-name: aparicion;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  
 }
-#preAlvaro:hover{
-    -webkit-animation: rotacion-horizontal-zoom 0.65s linear both;
-	animation: rotacion-horizontal-zoom 0.65s linear both;
+
+.imagen {
+  border-radius: 5px;
 }
+
+
+#diego, #paula, #raquel {
+  -webkit-animation-name: entrada-derecha;
+  animation-name: entrada-derecha;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#alvaro, #sergio {
+  -webkit-animation-name: entrada-izquierda;
+  animation-name: entrada-izquierda;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+
+#fotos-intro {
+  -webkit-animation-name: fotos-intro;
+  animation-name: fotos-intro;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+
+
+  
+  
+  
