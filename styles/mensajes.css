@@ -263,21 +263,3 @@ input[type="text"]:focus{
     font-size: 0.8em;
     text-align: right !important;
 }
-
-/*
-@keyframes deslizar {
-    from {
-      top: -300;
-    }
-  
-    to {
-      top: 0;
-    }
-  }
-
-  #deslizar, .navbar {
-    animation-name: deslizar;
-    animation-duration: 1s;
- }
-
-*/
