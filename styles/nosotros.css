@@ -5,6 +5,19 @@
 }
 ::-webkit-scrollbar {display: none;}
 
+@font-face {
+  font-family: marlo;
+  src: url("../fonts/mark_my_words.ttf");
+}
+
+#titulo{
+  font-family: marlo;
+}
+
+.gafas {
+  transform: rotate(22deg);
+}
+
 body {
     background-color: rgb(148, 124, 251);
     text-align: justify;

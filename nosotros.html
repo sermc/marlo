@@ -10,23 +10,64 @@
 
     <!-- Fichero css -->
     <link rel="stylesheet" href="styles/nosotros.css">
+    <!-- Link hacia el css del header -->
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
     <body>
+        <nav class="navbar navbar-light bg-light m-5 rounded slide-in-top">
+            <div class="container-fluid p-3 d-flex flex-wrap item-aligns-center">
+        
+              <div class="justify-content-lg-start item-aligns-center">
+                <a class="navbar-brand pl-5" href="inicio.html">
+                  <span id="titulo" style="font-size:29px">Marlo</span>
+                  <img src="img/gafas.png" width="30" height="24"
+                    class="d-inline-block align-text-top gafas item-aligns-center">
+                </a>
+              </div>
+        
+              <ul class="nav item-aligns-center d-flex justify-content-center">
+                <li class="nav-item"><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="consejos.html" class="nav-link">Consejos</a></li>
+                <li class="nav-item social-media order-lg cambia">
+                  <p class="mb-0 d-flex">
+                    <a href="mensajes.html" class=" d-flex align-items-center justify-content-center"><span
+                        class="fa fa-envelope"></span></a>
+                    <a href="ajustes.html" class="d-flex align-items-center justify-content-center"><span
+                        class="fa fa-cogs"></span></a>
+                  </p>
+                </li>
+                <li class="nav-item">
+        
+                  <div class="flex-shrink-0 dropdown">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="img/Marco2.png" width="40" height="40" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-sm-end text-small shadow" aria-labelledby="dropdownUser2">
+                      <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
         <div class="container">
             <main>
 
             <div class="container">
-
-                <div>
-                    <h2>HEADEEER</h2>
-                </div>
                 <!-- Descripción de nosotros -->
                 <div id="descripcion">
-                    <p>
-                        Vivimos tiempos difíciles donde es difícil encontrar a tu ornitorrinco, tu media naranja. <br>
-                        Pero tranquilo soldado mediante esta página web te será muy facil encontrar compañía. <br>
-                        Si tienes alguna duda puedes pasarte por nuestro correo electrónico y mostrarnos tu duda o sugerencia <a href="https://www.google.com/intl/es/gmail/about/">aquí</a> <br>
+                    <p style="text-align: justify;">
+                        Vivimos tiempos difíciles donde es difícil encontrar a tu ornitorrinco, tu media naranja. 
+                        Pero tranquilo soldado mediante esta página web te será muy facil encontrar compañía. 
+                        Si tienes alguna duda puedes pasarte por nuestro correo electrónico y mostrarnos tu duda o sugerencia <a href="https://www.google.com/intl/es/gmail/about/">aquí</a> 
                         En este apartado te mostraremos a los desarrolladores tan guapos que han creado semejante obra de arte. PD: No te olvides de puntuarles.
                     </p>
                 </div>
@@ -43,7 +84,7 @@
                     </div>
 
                     <div class="col-lg-2">
-                        <a href="#paula"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Paulaner1.jpg" alt="" id="prePaula"></a>
+                        <a href="#paula"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Paulaner2.jpg" alt="" id="prePaula"></a>
                         <h2>Paula</h2>
                     </div>
 
@@ -63,9 +104,9 @@
 
                 <div class="row" id="raquel">
                     <!-- col-md-7 -->
-                    <div class="col-lg-7 order-lg-1" id="div-raquel">
-                        <h2 class="">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                    <div class="col-lg-7 order-lg-1 p-3" id="div-raquel">
+                        <h2 class="p-3">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                        <p class="lead p-3">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
                         <div class="d-flex justify-content-between">
                             <small>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
@@ -100,9 +141,11 @@
 
                 <div class="row" id="sergio">
                     <!-- col-md-7 order-md-2 -->
-                    <div class="col-lg-7 order-lg-2" id="div-sergio">
-                        <h2 class="">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                    <div class="col-lg-7 order-lg-2 p-3" id="div-sergio">
+                        <h2 class="p-3">Sergio 🦊. <span class="text-muted">Tu Developer de Confianza.</span></h2>
+                        <p class="lead p-3">Muchos dicen que soy un hijo de puta, otros que soy muy buena persona pero la realidad es que tonto el quien lo lea. Suelen decirme que soy listo
+                            pero soy más tanto que Diego jugando al Lost Ark, me suelen decir borracho pero no bebo.
+                        </p>
                     </div>
                     <!-- col-md-5 order-md-1 -->
                     <div class="col-lg-4 order-lg-1">
@@ -115,13 +158,13 @@
 
                 <div class="row" id="paula">
                     <!-- col-md-7 -->
-                    <div class="col-lg-7" id="div-paula">
-                        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    <div class="col-lg-7 p-3" id="div-paula">
+                        <h2 class="featurette-heading p-3">Paulaner 🍻. <span class="text-muted">Nuestra madre.</span></h2>
+                        <p class="lead p-3">Parece dulce fuera pero...no le pongas un texto sin justificar. No, en serio, podría acabar contigo antes de que te dieras cuenta de 🔥🔥 la PORQUERÍA de CSS que has hecho 🔥🔥 pero con amor eh <3 <br> <br> Pasó de matar bichos en plagas a buscar bugs en códigos. Experta en hacer desaparecer cerveza y dulces ✨ , madre soltera de tres cuadrúpedos y sobre todo... TIQUISMIQUIS :)</p>
                     </div>
                     <!-- col-md-5 -->
                     <div class="col-lg-5">
-                        <img src="img/Paulaner1.jpg" width="400" height="400" alt="" class="imagen">
+                        <img src="img/Paulaner2.jpg" width="400" height="400" alt="" class="imagen">
 
                     </div>
                 </div>
@@ -130,9 +173,9 @@
 
                 <div class="row" id="alvaro">
                     <!-- col-md-7 order-md-2 -->
-                    <div class="col-lg-7 order-lg-2" id="div-alvaro">
-                        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                    <div class="col-lg-7 order-lg-2 p-3" id="div-alvaro">
+                        <h2 class="featurette-heading p-3">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+                        <p class="lead p-3">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
                     </div>
                     <!-- col-md-5 order-md-1 -->
                     <div class="col-lg-4 order-lg-1">
@@ -145,9 +188,12 @@
 
                 <div class="row" id="diego">
                     <!-- col-md-7 -->
-                    <div class="col-lg-7" id="div-diego">
-                        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    <div class="col-lg-7 p-3" id="div-diego">
+                        <h2 class="featurette-heading p-3">Diego. <span class="text-muted">🥛 Mamporrero 🥛 de toda la vida.</span></h2>
+                        <p class="lead p-3">Soy Diego tengo 19 años, la vida, qué es la vida sino una mierda maravillosa,
+                            me gustan las 🍔 hamburguesas 🍔 y la música, por eso respeto
+                            todos los estilos... mentira jajaja que les jodan 🎸 VIVA EL ROCK! 🎸
+                            soy un buen deportista, en verdad no vaya mierda de persona.</p>
                     </div>
                     <!-- col-md-5 -->
                     <div class="col-lg-5">
