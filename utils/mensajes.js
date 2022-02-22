@@ -61,6 +61,16 @@ function activarchat(chat){
             document.getElementById("nueve").classList.remove("invisible");
             document.getElementById("nueve").classList.add("visible");
         break;
+        case ("Juanlu"):
+            document.getElementById("Juanlu").classList.add("seleccionado");
+            document.getElementById("diez").classList.remove("invisible");
+            document.getElementById("diez").classList.add("visible");
+        break;
+        case ("Sergio"):
+            document.getElementById("Sergio").classList.add("seleccionado");
+            document.getElementById("once").classList.remove("invisible");
+            document.getElementById("once").classList.add("visible");
+        break;
     }
 }
 
