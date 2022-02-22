@@ -31,19 +31,17 @@ hr{
   text-align: left;
 }
 
+
 .coviiid {
     list-style-image: url("../img/covid.png");
-    font-size: large;
 }
 
 .feoo{
   list-style-image: url("../img/marcochiquito.png");
-  font-size: large;
 }
 
 .stalkkk{
   list-style-image: url("../img/ojos_1.png");
-  font-size: large;
 }
 
 /* HEADER */
