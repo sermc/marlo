@@ -379,6 +379,11 @@ display: flex !important;
 flex-basis: auto;
 }
 
+.social-media p a:hover {
+    background: #ce79ff;
+    border-color: #ce79ff;
+}
+
 .navbar-expand .navbar-toggler {
 display: none;
 }
@@ -495,11 +500,6 @@ margin-right: 4px;
 
 .social-media p a span {
 color: #4d4d4d;
-}
-
-.social-media p a:hover {
-background: #fc7fb2;
-border-color: #fc7fb2;
 }
 
 .social-media p a:hover span {
@@ -693,10 +693,7 @@ margin-right: 4px;
 color: #4d4d4d;
 }
 
-.social-media p a:hover {
-background: #fc7fb2;
-border-color: #fc7fb2;
-}
+
 
 .social-media p a:hover span {
 color: #fff;

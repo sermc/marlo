@@ -1,6 +1,7 @@
 body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -18,7 +19,7 @@ body {
     width: 1px;
 }
 
-.footerEstilo {
+/* .footerEstilo {
     background-color: rgb(208, 193, 214);
     padding: 1em;
     width: 94%;
@@ -26,7 +27,7 @@ body {
 
 .footerEstilo h2{
     font-family: titulo;
-}
+} */
 
 ul {
     list-style-image: url("../img/amor.png");
