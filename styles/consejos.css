@@ -3,8 +3,9 @@ body {
     background-image: url('../img/fondo.jpg');
     /* background-size: contain; */
     background-repeat: no-repeat;
+    
 }
-
+::-webkit-scrollbar {display: none;}
 @font-face {
     font-family: marlo;
     src: url("../fonts/mark_my_words.ttf");
