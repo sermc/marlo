@@ -4,6 +4,7 @@ body{
     background-image: url('../img/marlo_fondo.png');
 }
 
+::-webkit-scrollbar {display: none;}
 
 
 h1 {
