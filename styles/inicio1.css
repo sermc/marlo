@@ -47,6 +47,7 @@ body {
     color:black;
 }
 
+::-webkit-scrollbar {display: none;}
 
 
 .perfil{
