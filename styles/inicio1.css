@@ -4,15 +4,16 @@
 body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
 }
-
+::-webkit-scrollbar {display: none;}
 .carousel-control{
   color: black
 }
 
 .test{
-  background-color: rgb(208, 193, 214);
+  background-color: rgb(202, 193, 214);
   width: 20px;
   font-size: .9em;
 }
@@ -46,10 +47,11 @@ body {
     color:black;
 }
 
+::-webkit-scrollbar {display: none;}
 
 
 .perfil{
-    background-color: rgb(208, 193, 214);
+    background-color: rgb(203, 193, 214);
     border-radius: 5px;
 }
 
@@ -72,23 +74,23 @@ body {
 }
 
 .noticia{
-  background-color: rgb(208, 193, 214);
+  background-color: rgb(203, 193, 214);
   border-radius: 7px;
   padding: 1em;
 }
 
 .noticias {
-  background-color: rgb(226, 217, 230);
+  background-color: rgb(223, 217, 230);
   padding: 1em;
 }
 
 .enlace{
   text-decoration: none;
-  border: 3px solid rgb(145, 115, 156);
+  border: 3px solid rgb(180, 148, 231);
   padding: .5em;
   border-radius: 10px;
   color: white;
-  background-color: rgb(188, 167, 196);
+  background-color: rgb(174, 153, 207);
 }
 
 .enlace:hover{

@@ -11,6 +11,7 @@ body{
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
+::-webkit-scrollbar {display: none;}
 
 .container-fluid{
     padding-left: 3em;
@@ -70,26 +71,36 @@ body{
     background-color: white;
 }
 .breadcrumb-item a{
-    color: #7250FF;
+    color: #ac72f8;
     text-decoration: none;
 }
 .progress-bar{
-background-color: #7250FF;
+background-color: #ac72f8;
 }
 .material-icons{
-    color: #7250FF;
+    color: #ac72f8;
 }
 .material-icons a{
     text-decoration: none;
 }
 .btn{
-    background-color: #7250FF;
+    background-color: #ac72f8;
     color: white;
 }
 .toast{
     padding: 0.5em;
-    width: 70%;
-    transform: translate(23% , -85%);
+    width: 50%;
+    transform: translate(50% , -105%);
     background-color: #ffffff;
     transition: all 0.5s;
+}
+#ultimos img{
+    width: 50%;
+}
+small{
+    font-size: 1.3em;
+}
+p{
+    display: inline;
+    margin-left: 5px;
 }

@@ -1,9 +1,8 @@
 body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
-    /* background-size: contain; */
+    background-size:cover;
     background-repeat: no-repeat;
-    
 }
 ::-webkit-scrollbar {display: none;}
 @font-face {
@@ -24,20 +23,25 @@ hr{
   background-color: blueviolet;
   opacity: .80;
 }
-
-/* .footerEstilo {
-    background-color: rgb(208, 193, 214);
-    padding: 1em;
-    width: 94%;
+.table>:not(caption)>*>*{
+  padding-left: 20px;
 }
 
-.footerEstilo h2{
-    font-family: titulo;
-} */
+.psoe{
+  text-align: left;
+}
 
-ul {
-    list-style-image: url("../img/amor.png");
-    font-size: large;
+
+.coviiid {
+    list-style-image: url("../img/covid.png");
+}
+
+.feoo{
+  list-style-image: url("../img/marcochiquito.png");
+}
+
+.stalkkk{
+  list-style-image: url("../img/ojos_1.png");
 }
 
 /* HEADER */
