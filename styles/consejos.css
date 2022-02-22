@@ -1,7 +1,7 @@
 body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
-    background-size: contain;
+    /* background-size: contain; */
     background-repeat: no-repeat;
 }
 
@@ -17,6 +17,11 @@ body {
 
 .ima {
     width: 1px;
+}
+
+hr{
+  background-color: blueviolet;
+  opacity: .80;
 }
 
 /* .footerEstilo {
