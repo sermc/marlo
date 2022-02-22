@@ -4,9 +4,10 @@
 body {
     text-align: justify;
     background-image: url('../img/fondo.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
 }
-
+::-webkit-scrollbar {display: none;}
 .carousel-control{
   color: black
 }
